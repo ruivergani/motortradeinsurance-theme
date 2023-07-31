@@ -14,8 +14,10 @@ module.exports = {
     extend: {
       colors: {
         darkRed: "#C20023",
+        darkRedOpacity: 'rgba(233, 65, 88, 0.15)',
         lightRed: "#E94158",
         lightYellow: "#FFFBF4",
+        darkYellow: "#FFAE10",
         gray100: "#F6F6F6",
         gray200: "#DADCDD",
         gray300: "#C6C7C8",
