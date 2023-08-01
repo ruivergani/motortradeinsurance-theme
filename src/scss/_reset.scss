@@ -56,3 +56,19 @@ header{
         }
     }
 }
+.breadcrumbs-list{
+    li{
+        position: relative;
+        &:not(:last-child){
+            &:after{
+                content: "";
+                position: absolute;
+                right: -20px;
+                top: 18px;
+                width: 10px;
+                height: 10px;
+                background: url("../../assets/icon-arrow-right.svg") no-repeat center center;
+            }
+        }
+    }
+}
