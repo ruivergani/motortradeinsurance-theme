@@ -4,6 +4,9 @@ module.exports = {
   theme: {
     backgroundImage: {
       img_bg_hero: "url('./assets/bg-home-hero.svg')",
+      img_yellow_square: "url('./assets/bg-card-yellow.png')",
+      img_red_square: "url('./assets/bg-card-red.png')",
+      img_blue_square: "url('./assets/bg-card-blue.png')",
     },
     screens: {
       sm: "480px",
@@ -18,6 +21,10 @@ module.exports = {
         lightRed: "#E94158",
         lightYellow: "#FFFBF4",
         darkYellow: "#FFAE10",
+        darkBlue: "#00BDE5",
+        cardYellow: "#FFF3C9",
+        cardRed: "rgba(233, 65, 88, 0.10)",
+        cardBlue: "#CCF6FF",
         gray100: "#F6F6F6",
         gray200: "#DADCDD",
         gray300: "#C6C7C8",
