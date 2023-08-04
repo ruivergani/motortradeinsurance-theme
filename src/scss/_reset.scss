@@ -1,6 +1,7 @@
 html{
     transition: all .3s;
     position: relative;
+    scroll-behavior: smooth;
 }
 // Header
 header{
@@ -398,4 +399,7 @@ header{
             transform: translateY(0px);
         }
     }
+}
+#insurance-types{
+    scroll-margin-top: 150px;
 }
