@@ -53,3 +53,22 @@ btnMenu.forEach((btn, index) => {
     })
   })
 }
+// Open Modal Function
+const btnOpenModalList = document.querySelectorAll('.js-cta-button');
+const btnCloseModal = document.querySelector('.js-close');
+if (btnOpenModalList.length > 0) {
+  btnOpenModalList.forEach((btnOpenModal) => {
+    btnOpenModal.addEventListener('click', (event) => {
+      event.preventDefault();
+      let html = document.body;
+      html.classList.add('show-modal');
+    });
+  });
+}
+if (btnCloseModal) {
+  btnCloseModal.addEventListener('click', (event) => {
+    event.preventDefault();
+    let html = document.body;
+    html.classList.remove('show-modal');
+  });
+}
