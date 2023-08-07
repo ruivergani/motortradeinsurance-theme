@@ -293,8 +293,8 @@
 
     <!-- Section Hero Insurance Pages -->
     <div class="w-full max-w-[1246px] mx-auto px-[15px]">
-      <section class="flex justify-between items-start flex-row max-lg:flex-col max-lg:items-center max-lg:text-center max-lg:justify-center gap-[20px]  max-lg:gap-[40px] pb-[100px] max-sm:pb-[60px] max-lg:pb-[100px]">
-        <div class="w-full max-w-[625px] max-lg:max-w-full flex flex-col items-start justify-start max-lg:justify-center max-lg:items-center pt-[140px] max-sm:pt-[30px] max-lg:pt-[60px]">
+      <section class="flex justify-between items-start flex-row max-lg:flex-col max-lg:items-center max-lg:text-center max-lg:justify-center gap-[20px]  max-lg:gap-[40px] pb-[140px] max-sm:pb-[60px] max-lg:pb-[100px]">
+        <div class="w-full max-w-[625px] max-lg:max-w-full flex flex-col items-start justify-start max-lg:justify-center max-lg:items-center pt-[80px] max-sm:pt-[30px] max-lg:pt-[60px]">
           <span class="block font-sans uppercase text-gray700 tracking-wider pb-[0px] max-sm:text-sm max-md:text-[16px] max-lg:py-[10px]">GET INSURED NOW</span>
           <h2 class="font-sans text-gray900 pb-[30px] text-[50px] max-sm:text-[26px] max-md:text-[28px] max-lg:text-[30px] max-lg:pb-[15px] tracking-wider leading-[60px]">
             Get Your
@@ -303,7 +303,7 @@
             </span>
             Insurance in Easy steps.
           </h2>
-          <p class="w-full max-w-[480px] text-[18px] font-sans font-normal tracking-[0.18px] leading-[25px] max-lg:text-[16px]">Save a fortune on your motor trade insurance with I4MT. We cover the majority of motor trade industries.</p>
+          <p class="w-full max-w-[480px] text-[18px] font-sans font-normal tracking-[0.18px] leading-[25px] max-lg:text-[16px] text-gray900">Save a fortune on your motor trade insurance with I4MT. We cover the majority of motor trade industries.</p>
           <ul class="my-[35px] max-sm:my-[15px] max-lg:my-[25px]">
             <li class="flex justify-start items-center gap-[15px] mb-[10px] text-[17px] max-sm:items-start max-sm:justify-start max-sm:gap-4 max-lg:text-[16px]">
               <i class="ph-bold ph-check text-[18px] max-lg:text-[17px] max-sm:mt-1"></i>
@@ -318,48 +318,16 @@
               <p class="font-sans text-gray900 tracking-[0.18px] max-sm:text-left">Majority Of Motor Trade Industries</p>
             </li>
           </ul>
-          <a href="#insurance-types" class="flex items-center gap-[15px] ease-in-out duration-200 hover:text-gray700">
-            <p class="font-sans hover:underline text-[17px] max-md:text-[16px] ">Check Insurance Products Below</p>
-            <i class="ph-bold ph-arrow-right"></i>
-          </a>
+          <!-- Get a Quote CTA Button -->
+          <button class="px-[50px] py-3 border border-darkRed rounded-md bg-transparent text-center text-darkRed font-sans font-medium ease-in-out duration-200 uppercase hover:bg-darkRed hover:text-white js-cta-button flex items-center gap-3" id="js-cta-button">
+            <span>Get a Quote</span>
+            <i class="ph-bold ph-arrow-right font-semibold text-[16px]"></i>
+          </button>
         </div>
-        <div class="w-full max-w-[450px] flex flex-col gap-[15px] pt-[110px] max-lg:pt-[0px]">
-          <!-- Form -->
-          <div>
-            <img src="./assets/bg-home-hero.svg" alt="" class="absolute right-0 top-[100px] z-[-20] max-lg:hidden">
-            <div class="w-full max-w-[450px] flex items-center justify-center flex-col">
-              <form id="merlin-dialler-form" action="" method="post" class="w-full bg-white rounded-lg shadow-xl px-[40px] pt-[40px] pb-[50px] flex flex-col items-center justify-center border-[1px] border-gray-100 max-sm:px-[25px]">
-                <h2 class="font-sans text-[22px] text-gray900 font-bold mb-[20px] text-center max-sm:text-[18px]">Find out how much you can save. Complete the form to get a quote.</h2>
-                <p class="font-sans text-gray700 max-sm:text-[16px]">Our friendly team is always on hand to help!</p>
-                <div class="my-[30px] flex items-center justify-center gap-[20px] flex-col">
-                  <input type="text" name="name" id="name" placeholder="Enter Your Name" required class="w-full border rounded-lg border-gray200 p-4 text-sm shadow-sm">
-                  <input type="text" name="surname" id="surname" placeholder="Enter Your Surname" required class="w-full border rounded-lg border-gray200 p-4 text-sm shadow-sm">
-                  <input type="number" name="phone" id="phone" placeholder="Enter Your Phone Number" class="w-full border rounded-lg border-gray200 p-4 text-sm shadow-sm">
-                  <div class="form-group-checkbox flex items-start gap-3">
-                    <input type="checkbox" name="conditions" id="checkbox_agree" required class="mt-1">
-                    <label for="checkbox_agree" class="text-sm max-lg:text-left">
-                      * I agree to my data being processed in accordance with the
-                      <a href="/privacy" class="hover:underline font-semibold">
-                        Privacy Policy
-                      </a>
-                    </label>
-                  </div>
-                </div>
-                <!-- === HIDDEN INPUT === -->
-                <input name="affinity" type="hidden" value="">
-                <input name="product" type="hidden" value="">
-                <input name="host" type="hidden" value="">
-                <input name="gclid" type="hidden">
-                <!-- === END OF HIDDEN INPUT === -->
-                <!-- Primary Form Next Button -->
-                <button id="dailer-submit-btn" type="submit" class="w-full max-w-[309px] border rounded-lg bg-darkRed text-center text-white font-sans font-semibold py-3  ease-in-out duration-200 hover:brightness-90 flex items-center justify-center gap-[10px]">
-                  <span>Next Steps</span>
-                  <i class="ph-bold ph-arrow-right font-semibold text-[16px]"></i>
-                  <div class="lds-ring"><div></div><div></div><div></div><div></div></div>
-                </button>
-              </form>
-            </div>
-          </div>
+        <div class="w-full max-w-[564px] flex flex-col gap-[25px] pt-[170px] max-lg:pt-[0px] max-lg:max-w-[400px]">
+          <!-- Right Div -->
+            <img src="./assets/bg-home-hero.svg" alt="" class="absolute right-0 top-[116px] z-[-20] max-lg:hidden">
+            <img src="./assets/car-hero-image.svg" alt="car audi image" title="car audi image" class="absolute right-[44px] top-[260px] w-max-[564px] h-max-[302px] max-lg:relative max-lg:right-auto max-lg:top-auto max-lg:max-w-[400px] max-lg:mt-[20px]">
         </div>
       </section>
     </div>
@@ -392,7 +360,7 @@
           <ul class="grid grid-cols-4 gap-[32px] max-sm:grid-cols-1 max-sm:items-center justify-items-center max-sm:gap-[20px] max-lg:grid-cols-2 m">
             <li>
               <a href="" class="relative overflow-hidden rounded-lg border w-full max-w-[280px] flex items-center justify-center flex-col text-center ease-in-out duration-200 hover:border-lightRed">
-                <img src="./assets/image_home01.jpg" class="pb-[25px] object-cover w-full rounded-lg min-w-[280px] max-h-[250px]"> 
+                <img src="./assets/image_home01.jpg" class="pb-[25px] object-cover w-full rounded-lg min-w-[280px] max-h-[250px] max-sm:max-h-[200px]"> 
                 <div class="px-[28px] flex items-center justify-center flex-col text-center">
                   <h2 class="font-sans text-gray900 text-[22px] pb-[15px] max-sm:text-[20px]">Combined Premises</h2>
                   <p class="font-sans pb-[20px] text-gray600 text-[18px] max-sm:text-[18px]">Traders insurance for those operating from a premises; covering your stock of cars and more!</p>
@@ -406,7 +374,7 @@
             </li>
             <li>
               <a href="" class="relative overflow-hidden rounded-lg border w-full max-w-[280px] flex items-center justify-center flex-col text-center ease-in-out duration-200 hover:border-lightRed">
-                <img src="./assets/image_home02.jpg" class="pb-[25px] object-cover w-full rounded-lg min-w-[280px] max-h-[250px]"> 
+                <img src="./assets/image_home02.jpg" class="pb-[25px] object-cover w-full rounded-lg min-w-[280px] max-h-[250px] max-sm:max-h-[200px]"> 
                 <div class="px-[28px] flex items-center justify-center flex-col text-center">
                   <h2 class="font-sans text-gray900 text-[22px] pb-[15px] max-sm:text-[20px]">Valeters Insurance</h2>
                   <p class="font-sans pb-[20px] text-gray600 text-[18px] max-sm:text-[18px]">You take care of your customers vehicles and we'll take care of all your insurance needs!</p>
@@ -420,7 +388,7 @@
             </li>
             <li>
               <a href="" class="relative overflow-hidden rounded-lg border w-full max-w-[280px] flex items-center justify-center flex-col text-center ease-in-out duration-200 hover:border-lightRed">
-                <img src="./assets/image_home03.jpg" class="pb-[25px] object-cover w-full rounded-lg min-w-[280px] max-h-[250px]"> 
+                <img src="./assets/image_home03.jpg" class="pb-[25px] object-cover w-full rounded-lg min-w-[280px] max-h-[250px] max-sm:max-h-[200px]"> 
                 <div class="px-[28px] flex items-center justify-center flex-col text-center">
                   <h2 class="font-sans text-gray900 text-[22px] pb-[15px] max-sm:text-[20px]">Mechanics Insurance</h2>
                   <p class="font-sans pb-[20px] text-gray600 text-[18px] max-sm:text-[18px]">An all-in-one package for mechanics - covering road risks, liability, your tools and more!</p>
@@ -434,7 +402,7 @@
             </li>
             <li>
               <a href="" class="relative overflow-hidden rounded-lg border w-full max-w-[280px] flex items-center justify-center flex-col text-center ease-in-out duration-200 hover:border-lightRed">
-                <img src="./assets/image_home04.jpeg" class="pb-[25px] object-cover w-full rounded-lg min-w-[280px] max-h-[250px]"> 
+                <img src="./assets/image_home04.jpeg" class="pb-[25px] object-cover w-full rounded-lg min-w-[280px] max-h-[250px] max-sm:max-h-[200px]"> 
                 <div class="px-[28px] flex items-center justify-center flex-col text-center">
                   <h2 class="font-sans text-gray900 text-[22px] pb-[15px] max-sm:text-[20px]">Road Risks Insurance</h2>
                   <p class="font-sans pb-[20px] text-gray600 text-[18px] max-sm:text-[18px]">The most basic level of cover for those who buy, sell and trade cars and motorbikes from home.</p>
