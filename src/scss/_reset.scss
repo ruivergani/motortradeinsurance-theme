@@ -403,3 +403,17 @@ header{
 #insurance-types{
     scroll-margin-top: 150px;
 }
+#mobile-menu-content{
+    opacity: 0;
+    pointer-events: none;
+}
+// Configuration for menu mobile open
+.menu-opened{
+    header{
+        #mobile-menu-content{
+            opacity: 1;
+            pointer-events: all;
+            transition: all .2s;
+        }
+    }
+}

@@ -72,3 +72,8 @@ if (btnCloseModal) {
     html.classList.remove('show-modal');
   });
 }
+// Add class active to menu button
+const menuButton = document.getElementById("js-menu-button");
+menuButton.addEventListener("click", () => {
+  document.documentElement.classList.toggle("menu-opened");
+});
