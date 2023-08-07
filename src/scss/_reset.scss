@@ -406,9 +406,36 @@ header{
 #mobile-menu-content{
     opacity: 0;
     pointer-events: none;
+    overflow-y: auto;
+    height: 100%;
+    transition: all .2s;
+    min-height: calc(100vh - 80px);
+    ul{
+        overflow-y: auto;
+        height: 100%;
+        transition: all .2s;
+        min-height: calc(100vh - 80px);
+    }
+    // customize the bar y
+    &::-webkit-scrollbar-track{
+        // the whole area
+        background-color: transparent;
+    }
+    &::-webkit-scrollbar{
+        width: 6px;
+        background-color: transparent;
+    }
+    &::-webkit-scrollbar-thumb{
+        // the scrollbar itself
+        background-color:#C20023;
+        border-radius: 6px;
+    }
 }
 // Configuration for menu mobile open
 .menu-opened{
+    html{
+        overflow-y: hidden;
+    }
     header{
         #mobile-menu-content{
             opacity: 1;
