@@ -1,18 +1,4 @@
-<!doctype html>
-<html lang="en-GB">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Motor Trade Insurance</title>
-    <meta name="description" content=""/>
-    <!-- Favicon -->
-    <link rel="shortcut icon" type="image/svg" href="./favicon.png">
-    <!-- Phosphor icons library -->
-    <script src="https://unpkg.com/@phosphor-icons/web"></script>
-    <!-- CSS Stylesheet -->
-    <link rel="stylesheet" href="./src/css/styles.css" />
-  </head>
-  <body>
+
     <!-- Base Get a Quote Button -->
     <button class="w-full max-w-[171px] inline-block border rounded-[28px] border-darkRed bg-darkRed px-8 py-3 font-sans text-center text-[16px] text-white antialiased font-medium uppercase hover:bg-transparent hover:text-darkRed focus:outline-none focus:ring active:text-darkRed ease-in-out duration-200 js-cta-button" id="js-cta-button">
       <span>Get a Quote</span>
@@ -63,7 +49,6 @@
         />
       </section>
     </div>
-
     <!-- CTA 02 -->
     <div class="w-full max-w-[1246px] mx-auto px-[15px]">
       <section>
@@ -101,7 +86,6 @@
         </div>
       </section>
     </div>
-
     <!-- CTA 03 -->
     <div class="w-full max-w-[1246px] mx-auto px-[15px]">
       <section>
@@ -139,10 +123,9 @@
         </div>
       </section>
     </div>
-
     <!-- CTA 04 -->
     <div class="w-full max-w-[1246px] mx-auto px-[15px] relative">
-      <img src="./assets/square-shape.svg" title="square shape" alt="square shape" class="max-lg:hidden block object-cover absolute top-[-70px] left-[-50px] z-0">
+      <img src="<?php echo get_template_directory_uri()?>/assets/square-shape.svg" title="square shape" alt="square shape" class="max-lg:hidden block object-cover absolute top-[-70px] left-[-50px] z-0">
       <section class="overflow-hidden bg-gray-50 sm:grid sm:grid-cols-2 sm:items-center relative z-10">
         <div class="p-8 md:p-12 lg:px-16 lg:py-24">
           <div class="mx-auto max-w-xl text-center ltr:sm:text-left rtl:sm:text-right">
@@ -171,7 +154,6 @@
         />
       </section>
     </div>
-
     <!-- CTA Black -->
     <div class="w-full max-w-[1246px] mx-auto px-[15px] my-[100px] max-sm:my-[30px] max-md:my-[60px]">
       <div class="w-full flex justify-between items-center py-[50px] px-[72px] max-md:flex-col max-md:gap-5 max-md:py-[20px] max-md:px-[20px] bg-gray900 rounded-[30px]">
@@ -184,7 +166,6 @@
         </button>
       </div>
     </div>
-
     <!-- Trustpilot -->
     <div class="w-full max-w-[1246px] mx-auto px-[15px]">
       <div class="">
@@ -195,7 +176,6 @@
         <p>trustpilot widget</p>
       </div>
     </div>
-
     <!-- Footer -->
     <footer class="bg-white border-t border-gray200 mt-[100px] max-sm:mt-[30px] max-md:mt-[60px]">
       <div class="w-full max-w-[1246px] mx-auto px-[15px]">
@@ -368,7 +348,6 @@
         </div>
       </div>
     </footer>
-
     <!-- Companies -->
     <div class="bg-gray100 w-full">
       <div class="w-full max-w-[1246px] mx-auto px-[15px]">
@@ -377,34 +356,33 @@
           <ul class="flex justify-between items-center gap-[100px] max-lg:gap-[60px] max-md:flex-col max-md:gap-[40px]">
             <li>
               <a href="">
-                <img src="./assets/logo-staveley.svg" alt="" class="object-cover w-full max-w-[223px] max-h-[94px] max-sm:max-w-[180px] max-sm:max-h-[50px]">
+                <img src="<?php echo get_template_directory_uri()?>/assets/logo-staveley.svg" alt="" class="object-cover w-full max-w-[223px] max-h-[94px] max-sm:max-w-[180px] max-sm:max-h-[50px]">
               </a>
             </li>
             <li>
               <a href="">
-                <img src="./assets/logo-comparehgv.svg" alt="" class="object-cover w-full max-w-[223px] max-h-[94px] max-sm:max-w-[180px] max-sm:max-h-[50px]">
+                <img src="<?php echo get_template_directory_uri()?>/assets/logo-comparehgv.svg" alt="" class="object-cover w-full max-w-[223px] max-h-[94px] max-sm:max-w-[180px] max-sm:max-h-[50px]">
               </a>
             </li>
             <li>
               <a href="">
-                <img src="./assets/logo-onesure.svg" alt="" class="object-cover w-full max-w-[223px] max-h-[94px] max-sm:max-w-[180px] max-sm:max-h-[50px]">
+                <img src="<?php echo get_template_directory_uri()?>/assets/logo-onesure.svg" alt="" class="object-cover w-full max-w-[223px] max-h-[94px] max-sm:max-w-[180px] max-sm:max-h-[50px]">
               </a>
             </li>
             <li>
               <a href="">
-                <img src="./assets/logo-tradewise.svg" alt="" class="object-cover w-full max-w-[223px] max-h-[94px] max-sm:max-w-[180px] max-sm:max-h-[50px]">
+                <img src="<?php echo get_template_directory_uri()?>/assets/logo-tradewise.svg" alt="" class="object-cover w-full max-w-[223px] max-h-[94px] max-sm:max-w-[180px] max-sm:max-h-[50px]">
               </a>
             </li>
             <li>
               <a href="">
-                <img src="./assets/logo-unicom.svg" alt="" class="object-cover w-full max-w-[223px] max-h-[94px] max-sm:max-w-[180px] max-sm:max-h-[50px]">
+                <img src="<?php echo get_template_directory_uri()?>/assets/logo-unicom.svg" alt="" class="object-cover w-full max-w-[223px] max-h-[94px] max-sm:max-w-[180px] max-sm:max-h-[50px]">
               </a>
             </li>
           </ul>
         </div>
       </div>
     </div>
-
     <!-- Breadcrumbs -->
     <div class="w-full max-w-[1246px] mx-auto px-[15px]">
       <section class="py-[60px] max-sm:py-[30px] max-md:py-[40px] ">
@@ -429,7 +407,6 @@
           </ul>
       </section>
     </div>
-
     <!-- Primary Content -->
     <div class="w-full max-w-[1246px] mx-auto px-[15px]">
       <section class="py-[100px] max-sm:py-[30px] max-md:py-[60px] max-lg:py-[60px] flex flex-row justify-between items-center gap-[20px] max-lg:flex-col max-lg:justify-center">
@@ -442,16 +419,15 @@
           </div>
         </div>
         <div class="w-full max-w-[520px]">
-          <img src="./assets/image-03.png" alt="" class="object-cover w-full">
+          <img src="<?php echo get_template_directory_uri()?>/assets/image-03.png" alt="" class="object-cover w-full">
         </div>
       </section>
     </div>
-
     <!-- Secondary Content -->
     <div class="w-full max-w-[1246px] mx-auto px-[15px]">
       <section class="py-[100px] max-sm:py-[30px] max-md:py-[60px] max-lg:py-[60px] flex flex-row justify-between items-center gap-[20px] max-lg:flex-col max-lg:justify-center">
         <div class="w-full max-w-[520px]">
-          <img src="./assets/image-04.png" alt="" class="object-cover w-full">
+          <img src="<?php echo get_template_directory_uri()?>/assets/image-04.png" alt="" class="object-cover w-full">
         </div>
         <div class="w-full max-w-[592px] max-lg:max-w-full">
           <span class="font-sans uppercase text-gray700 tracking-wider pb-[8px] max-sm:text-sm max-md:text-md">helping you is in our best interest</span>
@@ -463,7 +439,6 @@
         </div>
       </section>
     </div>
-
     <!-- FAQs -->
     <div class="w-full max-w-[1246px] mx-auto px-[15px] border-y-2">
       <section class="py-[100px] max-sm:py-[30px] max-lg:py-[60px]">
@@ -564,12 +539,11 @@
         </div>
       </section>
     </div>
-
     <!-- Why Us Section -->
     <div class="w-full max-w-[1246px] mx-auto px-[15px]">
       <section class="py-[100px] max-sm:py-[30px] max-lg:py-[60px] flex justify-between items-start gap-[20px] max-md:flex-col-reverse">
         <div class="flex gap-[30px] max-sm:gap-[20px] flex-col w-full max-w-[559px] max-md:max-w-full">
-          <img src="./assets/image-02.png" alt="" class="object-cover w-full max-w-[559px] max-md:max-w-full">
+          <img src="<?php echo get_template_directory_uri()?>/assets/image-02.png" alt="" class="object-cover w-full max-w-[559px] max-md:max-w-full">
           <span class="font-sans text-gray700 text-sm">* Take out an insurance policy with One-Sure Insurance, and if you find a cheaper Insurance quotation within 48 hours, subject to written proof being received that the Insurance quotation is on a like-for-like basis, we will cancel the Insurance policy and issue you with a full refund.</span>
         </div>
         <div class="w-full max-w-[584px] max-md:max-w-full">
@@ -665,7 +639,6 @@
         </div>
       </section>
     </div>
-
     <!-- Companies -->
     <div class=" w-full">
       <div class="w-full max-w-[1246px] mx-auto px-[15px]">
@@ -674,35 +647,30 @@
           <ul class="flex justify-between items-center gap-[100px] max-lg:gap-[60px] max-md:flex-col max-md:gap-[40px]">
             <li>
               <a href="">
-                <img src="./assets/logo-staveley.svg" alt="" class="object-cover w-full max-w-[223px] max-h-[94px] max-sm:max-w-[180px] max-sm:max-h-[50px]">
+                <img src="<?php echo get_template_directory_uri()?>/assets/logo-staveley.svg" alt="" class="object-cover w-full max-w-[223px] max-h-[94px] max-sm:max-w-[180px] max-sm:max-h-[50px]">
               </a>
             </li>
             <li>
               <a href="">
-                <img src="./assets/logo-comparehgv.svg" alt="" class="object-cover w-full max-w-[223px] max-h-[94px] max-sm:max-w-[180px] max-sm:max-h-[50px]">
+                <img src="<?php echo get_template_directory_uri()?>/assets/logo-comparehgv.svg" alt="" class="object-cover w-full max-w-[223px] max-h-[94px] max-sm:max-w-[180px] max-sm:max-h-[50px]">
               </a>
             </li>
             <li>
               <a href="">
-                <img src="./assets/logo-onesure.svg" alt="" class="object-cover w-full max-w-[223px] max-h-[94px] max-sm:max-w-[180px] max-sm:max-h-[50px]">
+                <img src="<?php echo get_template_directory_uri()?>/assets/logo-onesure.svg" alt="" class="object-cover w-full max-w-[223px] max-h-[94px] max-sm:max-w-[180px] max-sm:max-h-[50px]">
               </a>
             </li>
             <li>
               <a href="">
-                <img src="./assets/logo-tradewise.svg" alt="" class="object-cover w-full max-w-[223px] max-h-[94px] max-sm:max-w-[180px] max-sm:max-h-[50px]">
+                <img src="<?php echo get_template_directory_uri()?>/assets/logo-tradewise.svg" alt="" class="object-cover w-full max-w-[223px] max-h-[94px] max-sm:max-w-[180px] max-sm:max-h-[50px]">
               </a>
             </li>
             <li>
               <a href="">
-                <img src="./assets/logo-unicom.svg" alt="" class="object-cover w-full max-w-[223px] max-h-[94px] max-sm:max-w-[180px] max-sm:max-h-[50px]">
+                <img src="<?php echo get_template_directory_uri()?>/assets/logo-unicom.svg" alt="" class="object-cover w-full max-w-[223px] max-h-[94px] max-sm:max-w-[180px] max-sm:max-h-[50px]">
               </a>
             </li>
           </ul>
         </div>
       </div>
     </div>
-
-    <!-- JavaScript Links -->
-    <script src="./src/js/all.js"></script>
-  </body>
-</html>
