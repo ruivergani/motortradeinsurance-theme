@@ -1,9 +1,10 @@
 <?php
   // Template name: Home
 ?>
-
 <!-- Include Header -->
 <?php get_header(); ?>
+
+<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
   <!-- === Form Modal Component === -->
   <section class="dialler-form-modal modal-cta-form">
@@ -69,28 +70,19 @@
   <div class="w-full max-w-[1246px] mx-auto px-[15px]">
     <section class="flex justify-between items-start flex-row max-lg:flex-col max-lg:items-center max-lg:text-center max-lg:justify-center gap-[20px]  max-lg:gap-[40px] pb-[140px] max-sm:pb-[60px] max-lg:pb-[100px]">
       <div class="w-full max-w-[625px] max-lg:max-w-full flex flex-col items-start justify-start max-lg:justify-center max-lg:items-center pt-[80px] max-sm:pt-[30px] max-lg:pt-[60px]">
-        <span class="block font-sans uppercase text-gray700 tracking-wider pb-[0px] max-sm:text-sm max-md:text-[16px] max-lg:py-[10px]">GET INSURED NOW</span>
+        <span class="block font-sans uppercase text-gray700 tracking-wider pb-[0px] max-sm:text-sm max-md:text-[16px] max-lg:py-[10px]"><?php the_field('subtitle_hero_page_home') ?></span>
         <h2 class="font-sans text-gray900 pb-[30px] text-[50px] max-sm:text-[26px] max-md:text-[28px] max-lg:text-[30px] max-lg:pb-[15px] tracking-wider leading-[60px]">
-          Get Your
-          <span class="before:block before:absolute before:-inset-1 before:-skew-y-2 before:bg-yellow-400 relative inline-block mt-3">
-            <span class="relative ">Motor Trade</span>
-          </span>
-          Insurance in Easy steps.
+          <?php the_field('title_hero_page_home') ?>
         </h2>
-        <p class="w-full max-w-[480px] text-[18px] font-sans font-normal tracking-[0.18px] leading-[25px] max-lg:text-[16px] text-gray900">Save a fortune on your motor trade insurance with I4MT. We cover the majority of motor trade industries.</p>
+        <p class="w-full max-w-[480px] text-[18px] font-sans font-normal tracking-[0.18px] leading-[25px] max-lg:text-[16px] text-gray900"><?php the_field('paragraph_hero_page_home') ?></p>
         <ul class="my-[35px] max-sm:my-[15px] max-lg:my-[25px]">
-          <li class="flex justify-start items-center gap-[15px] mb-[10px] text-[17px] max-sm:items-start max-sm:justify-start max-sm:gap-4 max-lg:text-[16px]">
-            <i class="ph-bold ph-check text-[18px] max-lg:text-[17px] max-sm:mt-1"></i>
-            <p class="font-sans text-gray900 tracking-[0.18px] max-sm:text-left">Bespoke Motor Traders Insurance Policies</p>
-          </li>
-          <li class="flex justify-start items-center gap-[15px] mb-[10px] text-[17px] max-sm:items-start max-sm:justify-start max-sm:gap-4 max-lg:text-[16px]">
-            <i class="ph-bold ph-check text-[18px] max-lg:text-[17px] max-sm:mt-1"></i>
-            <p class="font-sans text-gray900 tracking-[0.18px] max-sm:text-left">Trusted Panel of Underwriters</p>
-          </li>
-          <li class="flex justify-start items-center gap-[15px] mb-[10px] text-[17px] max-sm:items-start max-sm:justify-start max-sm:gap-4 max-lg:text-[16px]">
-            <i class="ph-bold ph-check text-[18px] max-lg:text-[17px] max-sm:mt-1"></i>
-            <p class="font-sans text-gray900 tracking-[0.18px] max-sm:text-left">Majority Of Motor Trade Industries</p>
-          </li>
+          <!-- Repeater -->
+          <?php if( have_rows('bullet_list_hero_page_home') ): while ( have_rows('bullet_list_hero_page_home') ) : the_row(); ?>
+            <li class="flex justify-start items-center gap-[15px] mb-[10px] text-[17px] max-sm:items-start max-sm:justify-start max-sm:gap-4 max-lg:text-[16px]">
+              <i class="ph-bold ph-check text-[18px] max-lg:text-[17px] max-sm:mt-1"></i>
+              <p class="font-sans text-gray900 tracking-[0.18px] max-sm:text-left"><?php the_sub_field('content_bullet_list') ?></p>
+            </li>
+          <?php endwhile; else : endif;?>
         </ul>
         <!-- Get a Quote CTA Button -->
         <button class="px-[50px] py-3 border border-darkRed rounded-md bg-transparent text-center text-darkRed font-sans font-medium ease-in-out duration-200 uppercase hover:bg-darkRed hover:text-white js-cta-button flex items-center justify-center gap-3" id="js-cta-button">
@@ -109,8 +101,8 @@
   <!-- Trustpilot -->
   <div class="w-full max-w-[1246px] mx-auto px-[15px] pb-[100px] max-sm:pb-[40px] max-md:pb-[60px]">
     <div class="">
-      <h2 class="font-sans text-center text-[40px] pb-[15px] text-gray900 font-normal max-md:pb-[10px] max-sm:text-[26px] max-md:text-[28px]">Top Rated Insurance Agency</h2>
-      <p class="font-sans text-center text-[18px] text-gray700 font-normal max-sm:text-[16px]">“I couldn’t have asked for a better experience with I4MT”</p>
+      <h2 class="font-sans text-center text-[40px] pb-[15px] text-gray900 font-normal max-md:pb-[10px] max-sm:text-[26px] max-md:text-[28px]"><?php the_field('title_trustpilot_page_home') ?></h2>
+      <p class="font-sans text-center text-[18px] text-gray700 font-normal max-sm:text-[16px]"><?php the_field('subtitle_trustpilot_page_home') ?></p>
     </div>
     <div class="flex items-center justify-center mt-[50px] max-sm:mt-[30px]">
       <p>trustpilot widget</p>
@@ -122,8 +114,8 @@
     <section>
       <div class="flex items-center justify-between max-md:flex-col max-md:items-center max-md:justify-center max-md:gap-[20px]">
         <div>
-          <span class="font-sans block uppercase text-gray700 tracking-wider pb-[8px] max-sm:text-sm max-md:text-md max-md:text-center">Services</span>
-          <h2 class="font-sans text-gray900 text-[40px] max-sm:text-[26px] max-md:text-center max-md:text-[28px] max-lg:text-[30px]">Discover all insurances available.</h2>
+          <span class="font-sans block uppercase text-gray700 tracking-wider pb-[8px] max-sm:text-sm max-md:text-md max-md:text-center"><?php the_field('subtitle_services_page_home') ?></span>
+          <h2 class="font-sans text-gray900 text-[40px] max-sm:text-[26px] max-md:text-center max-md:text-[28px] max-lg:text-[30px]"><?php the_field('title_services_page_home') ?></h2>
         </div>
         <!-- View All Insurance Button -->
         <button class="px-8 py-3 inline-block border border-darkRed rounded-lg bg-darkRed text-center text-white font-sans font-medium ease-in-out duration-200 hover:text-darkRed hover:bg-transparent">
@@ -132,62 +124,23 @@
       </div>
       <div class="pt-[60px] max-sm:pt-[30px] max-md:pt-[40px]">
         <ul class="grid grid-cols-4 gap-[32px] max-sm:grid-cols-1 max-sm:items-center justify-items-center max-sm:gap-[20px] max-lg:grid-cols-2 m">
-          <li>
-            <a href="" class="relative overflow-hidden rounded-lg border w-full max-w-[280px] flex items-center justify-center flex-col text-center ease-in-out duration-200 hover:border-lightRed">
-              <img src="<?php echo get_template_directory_uri()?>/assets/image_home01.jpg" class="pb-[25px] object-cover w-full rounded-lg max-h-[250px] max-sm:max-h-[200px] max-lg:min-w-0"> 
-              <div class="px-[28px] flex items-center justify-center flex-col text-center">
-                <h2 class="font-sans text-gray900 text-[22px] pb-[15px] max-sm:text-[18px] max-lg:text-[20px]">Combined Premises</h2>
-                <p class="font-sans pb-[20px] text-gray700 text-[18px] max-sm:text-[16px] max-lg:text-[18px]">Traders insurance for those operating from a premises; covering your stock of cars and more!</p>
-                <div class="self-end mr-[-38px] mb-[-5px]">
-                  <div class="rounded-[50px] bg-gray100 w-full max-w-[85px] h-full max-h-[85px] py-[20px] px-[26px] flex items-center justify-center ease-in-out duration-200 hover:bg-lightRed hover:text-white">
-                    <i class="ph-bold ph-arrow-right text-[24px]"></i>
+          <!-- Repeater -->
+          <?php if( have_rows('card_services_page_home') ): while ( have_rows('card_services_page_home') ) : the_row(); ?>
+            <li>
+              <a href="<?php the_sub_field('card_link_services_repeater_page_home') ?>" class="relative overflow-hidden rounded-lg border w-full max-w-[280px] flex items-center justify-center flex-col text-center ease-in-out duration-200 hover:border-lightRed">
+                <img src="<?php the_sub_field('card_image_services_repeater_page_home') ?>" class="pb-[25px] object-cover w-full rounded-lg max-h-[250px] max-sm:max-h-[200px] max-lg:min-w-0"> 
+                <div class="px-[28px] flex items-center justify-center flex-col text-center">
+                  <h2 class="font-sans text-gray900 text-[22px] pb-[15px] max-sm:text-[18px] max-lg:text-[20px]"><?php the_sub_field('card_title_services_repeater_page_home') ?></h2>
+                  <p class="font-sans pb-[20px] text-gray700 text-[18px] max-sm:text-[16px] max-lg:text-[18px]"><?php the_sub_field('card_subtitle_services_repeater_page_home') ?></p>
+                  <div class="self-end mr-[-38px] mb-[-5px]">
+                    <div class="rounded-[50px] bg-gray100 w-full max-w-[85px] h-full max-h-[85px] py-[20px] px-[26px] flex items-center justify-center ease-in-out duration-200 hover:bg-lightRed hover:text-white">
+                      <i class="ph-bold ph-arrow-right text-[24px]"></i>
+                    </div>
                   </div>
                 </div>
-              </div>
-            </a>
-          </li>
-          <li>
-            <a href="" class="relative overflow-hidden rounded-lg border w-full max-w-[280px] flex items-center justify-center flex-col text-center ease-in-out duration-200 hover:border-lightRed">
-              <img src="<?php echo get_template_directory_uri()?>/assets/image_home02.jpg" class="pb-[25px] object-cover w-full rounded-lg max-h-[250px] max-sm:max-h-[200px] max-lg:min-w-0"> 
-              <div class="px-[28px] flex items-center justify-center flex-col text-center">
-                <h2 class="font-sans text-gray900 text-[22px] pb-[15px] max-sm:text-[18px] max-lg:text-[20px]">Valeters Insurance</h2>
-                <p class="font-sans pb-[20px] text-gray700 text-[18px] max-sm:text-[16px] max-lg:text-[18px]">You take care of your customers vehicles and we'll take care of all your insurance needs!</p>
-                <div class="self-end mr-[-38px] mb-[-5px]">
-                  <div class="rounded-[50px] bg-gray100 w-full max-w-[85px] h-full max-h-[85px] py-[20px] px-[26px] flex items-center justify-center ease-in-out duration-200 hover:bg-lightRed hover:text-white">
-                    <i class="ph-bold ph-arrow-right text-[24px]"></i>
-                  </div>
-                </div>
-              </div>
-            </a>
-          </li>
-          <li>
-            <a href="" class="relative overflow-hidden rounded-lg border w-full max-w-[280px] flex items-center justify-center flex-col text-center ease-in-out duration-200 hover:border-lightRed">
-              <img src="<?php echo get_template_directory_uri()?>/assets/image_home03.jpg" class="pb-[25px] object-cover w-full rounded-lg max-h-[250px] max-sm:max-h-[200px] max-lg:min-w-0"> 
-              <div class="px-[28px] flex items-center justify-center flex-col text-center">
-                <h2 class="font-sans text-gray900 text-[22px] pb-[15px] max-sm:text-[18px] max-lg:text-[20px]">Mechanics Insurance</h2>
-                <p class="font-sans pb-[20px] text-gray700 text-[18px] max-sm:text-[16px] max-lg:text-[18px]">An all-in-one package for mechanics - covering road risks, liability, your tools and more!</p>
-                <div class="self-end mr-[-38px] mb-[-5px]">
-                  <div class="rounded-[50px] bg-gray100 w-full max-w-[85px] h-full max-h-[85px] py-[20px] px-[26px] flex items-center justify-center ease-in-out duration-200 hover:bg-lightRed hover:text-white">
-                    <i class="ph-bold ph-arrow-right text-[24px]"></i>
-                  </div>
-                </div>
-              </div>
-            </a>
-          </li>
-          <li>
-            <a href="" class="relative overflow-hidden rounded-lg border w-full max-w-[280px] flex items-center justify-center flex-col text-center ease-in-out duration-200 hover:border-lightRed">
-              <img src="<?php echo get_template_directory_uri()?>/assets/image_home04.jpeg" class="pb-[25px] object-cover w-full rounded-lg max-h-[250px] max-sm:max-h-[200px] max-lg:min-w-0"> 
-              <div class="px-[28px] flex items-center justify-center flex-col text-center">
-                <h2 class="font-sans text-gray900 text-[22px] pb-[15px] max-sm:text-[18px] max-lg:text-[20px]">Road Risks Insurance</h2>
-                <p class="font-sans pb-[20px] text-gray700 text-[18px] max-sm:text-[16px] max-lg:text-[18px]">The most basic level of cover for those who buy, sell and trade cars and motorbikes from home.</p>
-                <div class="self-end mr-[-38px] mb-[-5px]">
-                  <div class="rounded-[50px] bg-gray100 w-full max-w-[85px] h-full max-h-[85px] py-[20px] px-[26px] flex items-center justify-center ease-in-out duration-200 hover:bg-lightRed hover:text-white">
-                    <i class="ph-bold ph-arrow-right text-[24px]"></i>
-                  </div>
-                </div>
-              </div>
-            </a>
-          </li>
+              </a>
+            </li>
+          <?php endwhile; else : endif;?>
         </ul>
       </div>
     </section>
@@ -228,92 +181,38 @@
       </div>
       <div class="w-full max-w-[584px] max-md:max-w-full">
         <div>
-          <span class="font-sans block uppercase text-gray700 tracking-wider pb-[8px] max-sm:text-sm max-md:text-md max-md:text-center">Why Choose Us</span>
-          <h2 class="font-sans text-gray900 text-[40px] max-sm:text-[26px] max-md:text-center max-md:text-[28px] max-lg:text-[30px]">What makes us the best.</h2>
+          <span class="font-sans block uppercase text-gray700 tracking-wider pb-[8px] max-sm:text-sm max-md:text-md max-md:text-center"><?php the_field('subtitle_why_us_page_home') ?></span>
+          <h2 class="font-sans text-gray900 text-[40px] max-sm:text-[26px] max-md:text-center max-md:text-[28px] max-lg:text-[30px]"><?php the_field('title_why_us_page_home') ?></h2>
         </div>
         <div class="mt-[40px] max-sm:mt-[20px] max-md:mt-[30px]">
           <div class="space-y-4">
-            <details class="group [&_summary::-webkit-details-marker]:hidden" >
-              <summary class="flex cursor-pointer items-center justify-between gap-1.5 rounded-lg bg-gray100 p-5 text-gray900 max-sm:p-4">
-                <h2 class="font-medium font-sans text-gray900 text-[18px] max-sm:text-[16px]">
-                  <span class="font-sans font-medium text-darkRed pr-[8px]">1.</span>Lorem ipsum dolor sit amet consectetur adipisicing?
-                </h2>
-                <svg
-                  class="h-5 w-5 shrink-0 transition duration-300 group-open:-rotate-180"
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M19 9l-7 7-7-7"
-                  />
-                </svg>
-              </summary>
-              <p class="mt-4 px-4 leading-relaxed text-gray700 font-sans">
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab hic veritatis
-                molestias culpa in, recusandae laboriosam neque aliquid libero nesciunt
-                voluptate dicta quo officiis explicabo consequuntur distinctio corporis
-                earum similique!
-              </p>
-            </details>
-            <details class="group [&_summary::-webkit-details-marker]:hidden" >
-              <summary class="flex cursor-pointer items-center justify-between gap-1.5 rounded-lg bg-gray100 p-5 text-gray900 max-sm:p-4">
-                <h2 class="font-medium font-sans text-gray900 text-[18px] max-sm:text-[16px]">
-                  <span class="font-sans font-medium text-darkRed pr-[8px]">2.</span>Lorem ipsum dolor sit amet consectetur adipisicing?
-                </h2>
-                <svg
-                  class="h-5 w-5 shrink-0 transition duration-300 group-open:-rotate-180"
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M19 9l-7 7-7-7"
-                  />
-                </svg>
-              </summary>
-              <p class="mt-4 px-4 leading-relaxed text-gray700 font-sans">
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab hic veritatis
-                molestias culpa in, recusandae laboriosam neque aliquid libero nesciunt
-                voluptate dicta quo officiis explicabo consequuntur distinctio corporis
-                earum similique!
-              </p>
-            </details>
-            <details class="group [&_summary::-webkit-details-marker]:hidden" >
-              <summary class="flex cursor-pointer items-center justify-between gap-1.5 rounded-lg bg-gray100 p-5 text-gray900 max-sm:p-4">
-                <h2 class="font-medium font-sans text-gray900 text-[18px] max-sm:text-[16px]">
-                  <span class="font-sans font-medium text-darkRed pr-[8px]">3.</span>Lorem ipsum dolor sit amet consectetur adipisicing?
-                </h2>
-                <svg
-                  class="h-5 w-5 shrink-0 transition duration-300 group-open:-rotate-180"
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M19 9l-7 7-7-7"
-                  />
-                </svg>
-              </summary>
-              <p class="mt-4 px-4 leading-relaxed text-gray700 font-sans">
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab hic veritatis
-                molestias culpa in, recusandae laboriosam neque aliquid libero nesciunt
-                voluptate dicta quo officiis explicabo consequuntur distinctio corporis
-                earum similique!
-              </p>
-            </details>
+            <!-- Repeater -->
+            <?php if( have_rows('repeater_why_us_page_home') ): while ( have_rows('repeater_why_us_page_home') ) : the_row(); ?>
+              <details class="group [&_summary::-webkit-details-marker]:hidden" >
+                <summary class="flex cursor-pointer items-center justify-between gap-1.5 rounded-lg bg-gray100 p-5 text-gray900 max-sm:p-4">
+                  <h2 class="font-medium font-sans text-gray900 text-[18px] max-sm:text-[16px]">
+                    <?php the_sub_field('title_items_why_us_page_home') ?>
+                  </h2>
+                  <svg
+                    class="h-5 w-5 shrink-0 transition duration-300 group-open:-rotate-180"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M19 9l-7 7-7-7"
+                    />
+                  </svg>
+                </summary>
+                <p class="mt-4 px-4 leading-relaxed text-gray700 font-sans">
+                  <?php the_sub_field('content_items_why_us_page_home') ?>
+                </p>
+              </details>
+            <?php endwhile; else : endif;?>
           </div>
         </div>
       </div>
@@ -324,15 +223,14 @@
   <div class="w-full max-w-[1246px] mx-auto px-[15px]">
     <section class="py-[100px] max-sm:py-[30px] max-md:py-[60px] max-lg:py-[60px] flex flex-row justify-between items-center gap-[20px] max-lg:flex-col max-lg:justify-center">
       <div class="w-full max-w-[592px] max-lg:max-w-full">
-        <span class="font-sans uppercase text-gray700 tracking-wider pb-[8px] max-sm:text-sm max-md:text-md">overview</span>
-        <h2 class="font-sans text-gray900 pb-[25px] text-[40px] max-sm:text-[26px] max-md:text-[28px] max-lg:text-[30px] max-lg:pb-[15px]">What is HGV Insurance Cover?</h2>
+        <span class="font-sans uppercase text-gray700 tracking-wider pb-[8px] max-sm:text-sm max-md:text-md"><?php the_field('subtitle_section_left_page_home') ?></span>
+        <h2 class="font-sans text-gray900 pb-[25px] text-[40px] max-sm:text-[26px] max-md:text-[28px] max-lg:text-[30px] max-lg:pb-[15px]"><?php the_field('title_section_left_page_home') ?></h2>
         <div class="content-text">
-          <p>HGV motor trade insurance is a holistic term that includes more than one policy or cover. In fact, most of our customers have a diverse policy that includes a lot more than just a road risk third party insurance, though that is the bare minimum you need to have when driving a customer’s hgv vehicle on public roads or public property.</p>
-          <p>We don’t peddle in “one size fits all” solutions. Our team of underwriters are patient and will listen to your exact requirements before drafting a single policy just for you. However, anyone needing an HGV motor trade insurance will have a few standard cover necessities. Here are a few optional covers we offer as part of our customized hgv motor trade insurance.</p>
+          <?php the_field('content_section_left_page_home') ?>
         </div>
       </div>
       <div class="w-full max-w-[520px]">
-        <img src="<?php echo get_template_directory_uri()?>/assets/image-03.png" alt="" class="object-cover w-full">
+        <img src="<?php the_field('image_section_left_page_home') ?>" alt="" class="object-cover w-full">
       </div>
     </section>
   </div>
@@ -341,14 +239,13 @@
   <div class="w-full max-w-[1246px] mx-auto px-[15px]">
     <section class="pb-[100px] max-sm:pb-[30px] max-md:pb-[40px] flex flex-row justify-between items-center gap-[20px] max-lg:flex-col max-lg:justify-center">
       <div class="w-full max-w-[520px]">
-        <img src="<?php echo get_template_directory_uri()?>/assets/image-04.png" alt="" class="object-cover w-full">
+        <img src="<?php the_field('image_section_right_page_home') ?>" alt="" class="object-cover w-full">
       </div>
       <div class="w-full max-w-[592px] max-lg:max-w-full">
-        <span class="font-sans uppercase text-gray700 tracking-wider pb-[8px] max-sm:text-sm max-md:text-md">helping you is in our best interest</span>
-        <h2 class="font-sans text-gray900 pb-[25px] text-[40px] max-sm:text-[26px] max-md:text-[28px] max-lg:text-[30px] max-lg:pb-[15px]">Your Success Matters To Us</h2>
+        <span class="font-sans uppercase text-gray700 tracking-wider pb-[8px] max-sm:text-sm max-md:text-md"><?php the_field('subtitle_section_right_page_home') ?></span>
+        <h2 class="font-sans text-gray900 pb-[25px] text-[40px] max-sm:text-[26px] max-md:text-[28px] max-lg:text-[30px] max-lg:pb-[15px]"><?php the_field('title_section_right_page_home') ?></h2>
         <div class="content-text">
-          <p>As an insurance intermediary, we are closer to you than an underwriter. Your continued success is in our best interest. The more you grow, the more coverage and indemnity you will need. Naturally, we have a vested interest in your growth, and that is why we are always happy to help you.</p>
-          <p>We offer the least documentation to get an hgv motor trade insurance and often only require receipts for the sale and purchase of vehicles or receipts and invoices pertaining to your business. The same applies to increasing indemnity, adding riders and extra covers after taking a policy with us. We firmly believe that insurance should be easy for all right from documentation to claims processin</p>
+          <?php the_field('content_section_right_page_home') ?>
         </div>
       </div>
     </section>
@@ -362,22 +259,22 @@
           <div class="grid grid-cols-2 gap-4 lg:grid-cols-2">
             <img
               alt="" title=""
-              src="./assets/image_cta01.jpg"
+              src="<?php the_field('image01_page_home') ?>"
               class="h-40 w-full object-cover sm:h-56 lg:h-full rounded-sm"
             />
             <img
               alt="" title=""
-              src="./assets/image_cta02.jpg"
+              src="<?php the_field('image02_page_home') ?>"
               class="h-40 w-full object-cover sm:h-56 lg:h-full rounded-sm"
             />
           </div>
           <div class="bg-lightYellow border border-darkYellow rounded-md p-8 md:p-12 lg:px-16 lg:py-24">
             <div class="mx-auto max-w-xl text-center">
               <h2 class="text-2xl font-bold text-gray900 md:text-3xl">
-                Find Quality Cover at an Affordable Price.
+                <?php the_field('title_cta_page_home') ?>
               </h2>
               <p class="hidden text-gray700 sm:mt-4 sm:block">
-                Don't delay, take the first step towards a worry-free future! Get your free quote today and let us be your shield against life's uncertainties. Remember, it's better to be prepared than to be caught off guard. Call or visit us now!
+                <?php the_field('subtitle_cta_page_home') ?>
               </p>
               <div class="mt-4 md:mt-8">
                 <!-- Get a Quote CTA Button -->
@@ -392,5 +289,6 @@
     </section>
   </div>
 
+<?php endwhile; else: endif; ?>
 <!-- Include Footer -->
 <?php get_footer(); ?> 

@@ -48,7 +48,7 @@
                   alt="icon menu dropdown"
                   title="icon menu dropdown"
                 />
-                <ul class="px-5 py-5 grid grid-cols-2 gap-x-[60px] gap-y-5">
+                <ul class="py-4 px-4 grid grid-cols-2 gap-x-[30px] gap-y-[8px]">
                   <!-- Dropdown Menu Item-->
                   <li class="px-[20px] py-[15px] cursor-pointer backdrop:w-full max-w-[336px] border rounded-md border-transparent hover:bg-darkRedOpacity ease-in-out duration-300 relative" id="menu-dropdown-item">
                     <a href="<?php echo get_permalink(get_page_by_title('Car Traders Insurance')) ?>" class="before:opacity-0 before:top-[30px] before:bg-darkRed before:rounded-r-lg before:absolute before:h-[48px] before:left-0 before:w-[5px] ease-in-out duration-300">
