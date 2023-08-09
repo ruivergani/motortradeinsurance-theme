@@ -68,8 +68,8 @@
 
   <!-- Section Hero Insurance Pages -->
   <div class="w-full max-w-[1246px] mx-auto px-[15px]">
-    <section class="flex justify-between items-start flex-row max-lg:flex-col max-lg:items-center max-lg:text-center max-lg:justify-center gap-[20px]  max-lg:gap-[40px] pb-[140px] max-sm:pb-[60px] max-lg:pb-[100px]">
-      <div class="w-full max-w-[625px] max-lg:max-w-full flex flex-col items-start justify-start max-lg:justify-center max-lg:items-center pt-[80px] max-sm:pt-[30px] max-lg:pt-[60px]">
+    <section class="flex justify-between items-start flex-row max-lg:flex-col max-lg:items-center max-lg:text-center max-lg:justify-center gap-[20px]  max-lg:gap-[40px] pb-[140px] max-sm:pb-[60px] max-lg:pb-[80px]">
+      <div class="w-full max-w-[625px] max-lg:max-w-full flex flex-col items-start justify-start max-lg:justify-center max-lg:items-center pt-[90px] max-sm:pt-[30px] max-lg:pt-[60px]">
         <span class="block font-sans uppercase text-gray700 tracking-wider pb-[0px] max-sm:text-sm max-md:text-[16px] max-lg:py-[10px]"><?php the_field('subtitle_hero_page_home') ?></span>
         <h2 class="font-sans text-gray900 pb-[30px] text-[50px] max-sm:text-[26px] max-md:text-[28px] max-lg:text-[30px] max-lg:pb-[15px] tracking-wider leading-[60px]">
           <?php the_field('title_hero_page_home') ?>
@@ -99,16 +99,18 @@
   </div>
 
   <!-- Trustpilot -->
-  <div class="w-full max-w-[1246px] mx-auto px-[15px] pb-[100px] max-sm:pb-[40px] max-md:pb-[60px]">
-    <div class="">
-      <h2 class="font-sans text-center text-[40px] pb-[15px] text-gray900 font-normal max-md:pb-[10px] max-sm:text-[26px] max-md:text-[28px]"><?php the_field('title_trustpilot_page_home') ?></h2>
-      <p class="font-sans text-center text-[18px] text-gray700 font-normal max-sm:text-[16px]"><?php the_field('subtitle_trustpilot_page_home') ?></p>
-    </div>
-    <div class="flex items-center justify-center mt-[50px] max-sm:mt-[30px]">
-      <p>trustpilot widget</p>
+  <div class="">
+    <div class="w-full max-w-[1246px] mx-auto px-[15px] pb-[150px] max-sm:pb-[40px] max-md:pb-[60px] ">
+      <div class="">
+        <h2 class="font-sans text-center text-[40px] pb-[15px] text-gray900 font-normal max-md:pb-[10px] max-sm:text-[26px] max-md:text-[28px]"><?php the_field('title_trustpilot_page_home') ?></h2>
+        <p class="font-sans text-center text-[18px] text-gray700 font-normal max-sm:text-[16px]"><?php the_field('subtitle_trustpilot_page_home') ?></p>
+      </div>
+      <div class="flex items-center justify-center mt-[50px] max-sm:mt-[30px]">
+        <p>trustpilot widget</p>
+      </div>
     </div>
   </div>
-
+  
   <!-- Section Insurance Types -->
   <div class="w-full max-w-[1246px] mx-auto px-[15px] pb-[100px]" id="insurance-types">
     <section>
@@ -128,10 +130,10 @@
           <?php if( have_rows('card_services_page_home') ): while ( have_rows('card_services_page_home') ) : the_row(); ?>
             <li>
               <a href="<?php the_sub_field('card_link_services_repeater_page_home') ?>" class="relative overflow-hidden rounded-lg border w-full max-w-[280px] flex items-center justify-center flex-col text-center ease-in-out duration-200 hover:border-lightRed">
-                <img src="<?php the_sub_field('card_image_services_repeater_page_home') ?>" class="pb-[25px] object-cover w-full rounded-lg max-h-[250px] max-sm:max-h-[200px] max-lg:min-w-0"> 
+                <img src="<?php the_sub_field('card_image_services_repeater_page_home') ?>" class="pb-[20px] object-cover w-full rounded-lg max-h-[250px] max-sm:max-h-[200px] max-lg:min-w-0"> 
                 <div class="px-[28px] flex items-center justify-center flex-col text-center">
                   <h2 class="font-sans text-gray900 text-[22px] pb-[15px] max-sm:text-[18px] max-lg:text-[20px]"><?php the_sub_field('card_title_services_repeater_page_home') ?></h2>
-                  <p class="font-sans pb-[20px] text-gray700 text-[18px] max-sm:text-[16px] max-lg:text-[18px]"><?php the_sub_field('card_subtitle_services_repeater_page_home') ?></p>
+                  <p class="font-sans pb-[15px] text-gray700 text-[18px] max-sm:text-[16px] max-lg:text-[18px]"><?php the_sub_field('card_subtitle_services_repeater_page_home') ?></p>
                   <div class="self-end mr-[-38px] mb-[-5px]">
                     <div class="rounded-[50px] bg-gray100 w-full max-w-[85px] h-full max-h-[85px] py-[20px] px-[26px] flex items-center justify-center ease-in-out duration-200 hover:bg-lightRed hover:text-white">
                       <i class="ph-bold ph-arrow-right text-[24px]"></i>
