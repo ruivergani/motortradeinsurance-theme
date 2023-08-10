@@ -409,12 +409,11 @@ header{
     overflow-y: auto;
     height: 100%;
     transition: all .2s;
-    min-height: calc(100vh - 80px);
+    min-height: calc(60vh - 80px);
     ul{
         overflow-y: auto;
-        height: 100%;
+        //height: 100%;
         transition: all .2s;
-        min-height: calc(100vh - 80px);
     }
     // customize the bar y
     &::-webkit-scrollbar-track{
@@ -433,7 +432,8 @@ header{
 }
 // Configuration for menu mobile open
 .menu-opened{
-    html{
+    overflow-y: hidden;
+    html, body{
         overflow-y: hidden;
     }
     header{
