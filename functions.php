@@ -112,4 +112,39 @@ acf_add_options_page(array(
 	'redirect'		=> false
 ));
 
+// Breadcrumbs Section
+function breadcrumbs($id = null){
+    ?>
+    <div class="w-full max-w-[1246px] mx-auto px-[15px]">
+        <section class="py-[60px] max-sm:py-[30px] max-md:py-[40px]">
+        <ul
+            class="flex flex-row gap-[35px] breadcrumbs-list max-md:flex-col max-md:items-center max-md:justify-center max-md:gap-[20px]">
+            <li>
+                <a href="<?php echo get_home_url(); ?>" aria-label="home page"
+                    class="flex flex-row gap-[10px] justify-center items-center rounded-[10px] bg-gray100 px-[20px] py-[12px] duration-200 hover:bg-gray-200">
+                    <i class="ph-bold ph-house"></i>
+                    <p class="font-sans font-medium text-gray900">Home</p>
+                </a>
+            </li>
+            <?php if(!empty($id)): ?>
+                <li>
+                    <a href="<?php echo get_permalink( $id ); ?>" aria-label="previous page"
+                        class="flex flex-row gap-[10px] justify-center items-center rounded-[10px] bg-gray100 px-[20px] py-[12px] duration-200 hover:bg-gray-200">
+                        <p class="font-sans font-medium text-gray900">
+                            <?php echo get_the_title( $id ); ?>
+                        </p>
+                    </a>
+                </li>
+            <?php endif; ?>
+            <li>
+                <a href="<?php echo get_permalink() ?>" aria-label="current page"
+                    class="flex flex-row gap-[10px] justify-center items-center rounded-[10px] bg-gray100 px-[20px] py-[12px] duration-200 hover:bg-gray-200">
+                    <p class="font-sans font-medium text-gray900"><?php the_title(); ?></p>
+                </a>
+            </li>
+        </ul>
+        </section>
+    </div>
+<?php }
+
 ?>
