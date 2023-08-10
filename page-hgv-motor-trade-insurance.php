@@ -5,6 +5,71 @@
 <!-- Include Header -->
 <?php get_header(); ?>
 
+  <!-- === Form Modal Component === -->
+  <section class="dialler-form-modal modal-cta-form">
+    <div class="overlay">
+    </div>
+    <div class="box">
+      <div class="box-content">
+        <div class="box-content-body">
+          <!-- Form -->
+          <div class="w-full max-w-[450px] flex items-center justify-center flex-col relative">
+            <button
+              class="cursor-pointer absolute end-2 top-2 rounded-full border border-gray-300 bg-gray-100 p-2 js-close">
+              <span class="sr-only">Close</span>
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd"
+                  d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                  clip-rule="evenodd" />
+              </svg>
+            </button>
+            <form id="merlin-dialler-form" action="" method="post"
+              class="w-full bg-white rounded-lg shadow-xl px-[40px] pt-[45px] pb-[50px] flex flex-col items-center justify-center border-[1px] border-gray-100 max-sm:px-[25px]">
+              <h2 class="font-sans text-[22px] text-gray900 font-bold mb-[20px] text-center max-sm:text-[18px]">Find out
+                how much you can save. Complete the form to get a quote.</h2>
+              <p class="font-sans text-gray700 max-sm:text-[16px]">Our friendly team is always on hand to help!</p>
+              <div class="my-[30px] flex items-center justify-center gap-[20px] flex-col">
+                <input type="text" name="name" id="name" placeholder="Enter Your Name" required
+                  class="w-full border rounded-lg border-gray200 p-4 text-sm shadow-sm">
+                <input type="text" name="surname" id="surname" placeholder="Enter Your Surname" required
+                  class="w-full border rounded-lg border-gray200 p-4 text-sm shadow-sm">
+                <input type="number" name="phone" id="phone" placeholder="Enter Your Phone Number"
+                  class="w-full border rounded-lg border-gray200 p-4 text-sm shadow-sm">
+                <div class="form-group-checkbox flex items-start gap-3">
+                  <input type="checkbox" name="conditions" id="checkbox_agree" required class="mt-1">
+                  <label for="checkbox_agree" class="text-sm max-lg:text-left">
+                    * I agree to my data being processed in accordance with the
+                    <a href="/privacy" class="hover:underline font-semibold">
+                      Privacy Policy
+                    </a>
+                  </label>
+                </div>
+              </div>
+              <!-- === HIDDEN INPUT === -->
+              <input name="affinity" type="hidden" value="">
+              <input name="product" type="hidden" value="">
+              <input name="host" type="hidden" value="">
+              <input name="gclid" type="hidden">
+              <!-- === END OF HIDDEN INPUT === -->
+              <!-- Primary Form Next Button -->
+              <button id="dailer-submit-btn" type="submit"
+                class="w-full max-w-[309px] border rounded-lg bg-darkRed text-center text-white font-sans font-semibold py-3  ease-in-out duration-200 hover:brightness-90 flex items-center justify-center gap-[10px]">
+                <span>Next Steps</span>
+                <i class="ph-bold ph-arrow-right font-semibold text-[16px]"></i>
+                <div class="lds-ring">
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                </div>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- Section Hero Insurance Pages -->
   <div class="w-full max-w-[1246px] mx-auto px-[15px]">
     <section
@@ -58,7 +123,7 @@
       <div class="w-full max-w-[537px] flex flex-col gap-[15px]">
         <!-- Yellow Card -->
         <div class="flex flex-row justify-between items-end max-sm:flex-col max-sm:items-center max-sm:justify-center">
-          <img src="./assets/square-shape-left.svg" alt="square left" title="square left"
+          <img src="<?php echo get_template_directory_uri()?>/assets/square-shape-left.svg" alt="square left" title="square left"
             class="w-full max-w-[112px] max-sm:hidden">
           <div
             class="w-full max-w-[305px] h-full max-h-[203px] p-[38px] bg-cardYellow border border-darkYellow rounded-tr-[32px] rounded-bl-[32px] max-md:p-[20px]">
@@ -81,7 +146,7 @@
               </h2>
               <p class="font-sans text-gray900 text-[18px] max-md:text-left">You could save big with us!</p>
             </div>
-            <img src="./assets/icon-left-surprise.svg" alt="icon left" title="icon left"
+            <img src="<?php echo get_template_directory_uri()?>/assets/icon-left-surprise.svg" alt="icon left" title="icon left"
               class="absolute left-[-35px] bottom-[-40px] max-md:hidden">
           </div>
           <div class="flex flex-col items-end justify-end">
@@ -93,7 +158,7 @@
                 Claim</h2>
               <p class="font-sans text-gray900 text-[18px] max-md:text-left">Get Support by expert easily.</p>
             </div>
-            <img src="./assets/square-shape-right.svg" class="object-cover max-md:hidden" alt="square right"
+            <img src="<?php echo get_template_directory_uri()?>/assets/square-shape-right.svg" class="object-cover max-md:hidden" alt="square right"
               title="square right">
           </div>
         </div>
@@ -106,7 +171,7 @@
     <section
       class="py-[100px] max-sm:py-[30px] max-lg:py-[60px] flex justify-between items-start gap-[20px] max-md:flex-col-reverse">
       <div class="flex gap-[30px] max-sm:gap-[20px] flex-col w-full max-w-[559px] max-md:max-w-full">
-        <img src="./assets/image-02.png" alt="" class="object-cover w-full max-w-[559px] max-md:max-w-full">
+        <img src="<?php echo get_template_directory_uri()?>/assets/image-02.png" alt="" class="object-cover w-full max-w-[559px] max-md:max-w-full">
         <span class="font-sans text-gray700 text-sm">* Take out an insurance policy with One-Sure Insurance, and if you
           find a cheaper Insurance quotation within 48 hours, subject to written proof being received that the Insurance
           quotation is on a like-for-like basis, we will cancel the Insurance policy and issue you with a full
@@ -226,7 +291,7 @@
         </div>
       </div>
       <div class="w-full max-w-[520px]">
-        <img src="./assets/image-03.png" alt="" class="object-cover w-full">
+        <img src="<?php echo get_template_directory_uri()?>/assets/image-03.png" alt="" class="object-cover w-full">
       </div>
     </section>
   </div>
@@ -236,7 +301,7 @@
     <section
       class="pb-[100px] max-sm:pb-[30px] max-md:pb-[40px] flex flex-row justify-between items-center gap-[20px] max-lg:flex-col max-lg:justify-center">
       <div class="w-full max-w-[520px]">
-        <img src="./assets/image-04.png" alt="" class="object-cover w-full">
+        <img src="<?php echo get_template_directory_uri()?>/assets/image-04.png" alt="" class="object-cover w-full">
       </div>
       <div class="w-full max-w-[592px] max-lg:max-w-full">
         <span class="font-sans uppercase text-gray700 tracking-wider pb-[8px] max-sm:text-sm max-md:text-md">helping you

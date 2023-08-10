@@ -156,26 +156,26 @@
         <div class="flex flex-row justify-between items-end max-sm:flex-col max-sm:items-center max-sm:justify-center">
           <img src="<?php echo get_template_directory_uri()?>/assets/square-shape-left.svg" alt="square left" title="square left" class="w-full max-w-[112px] max-sm:hidden">
           <div class="w-full max-w-[305px] h-full max-h-[203px] p-[38px] bg-cardYellow border border-darkYellow rounded-tr-[32px] rounded-bl-[32px] max-md:p-[20px]">
-            <h2 class="w-full max-w-[242px] font-sans font-medium text-[30px] text-darkYellow mb-[15px] max-md:text-[26px] max-md:text-left max-md:mb-[5px]">Policies From Just £504</h2>
-            <p class="font-sans text-gray900 text-[18px] max-md:text-left">You could save big with us!</p>
+            <h2 class="w-full max-w-[242px] font-sans font-medium text-[30px] text-darkYellow mb-[15px] max-md:text-[26px] max-md:text-left max-md:mb-[5px]"><?php the_field('yellow_card_title_why_us_page_home') ?></h2>
+            <p class="font-sans text-gray900 text-[18px] max-md:text-left"><?php the_field('yellow_card_subtitle_why_us_page_home') ?></p>
           </div>
         </div>
         <div class="mt-[40px] flex flex-row justify-between max-lg:mt-[20px] max-md:gap-[20px] max-sm:flex-col max-sm:items-center max-sm:justify-center max-sm:mt-[0px] max-sm:gap-[15px]">
           <div class="relative">
             <!-- Red Card -->
             <div class="w-full max-w-[293px] h-full max-h-[280px] bg-cardRed border border-darkRed rounded-tr-[32px] px-[38px] py-[54px] rounded-bl-[32px] max-md:px-[20px] max-md:py-[20px] max-md:h-auto">
-              <h2 class="w-full max-w-[195px] font-sans font-medium text-[30px] text-darkRed mb-[15px] max-md:text-[26px] max-md:text-left max-md:mb-[5px]">Call Us Today
-                <span class="text-[26px] max-md:text-[24px]">Get Insured</span>
+              <h2 class="w-full max-w-[195px] font-sans font-medium text-[30px] text-darkRed mb-[15px] max-md:text-[26px] max-md:text-left max-md:mb-[5px]">
+                <?php the_field('red_card_title_why_us_page_home') ?>
               </h2>
-              <p class="font-sans text-gray900 text-[18px] max-md:text-left">You could save big with us!</p>
+              <p class="font-sans text-gray900 text-[18px] max-md:text-left"><?php the_field('red_card_subtitle_why_us_page_home') ?></p>
             </div>
             <img src="<?php echo get_template_directory_uri()?>/assets/icon-left-surprise.svg" alt="icon left" title="icon left" class="absolute left-[-35px] bottom-[-40px] max-md:hidden">
           </div>
           <div class="flex flex-col items-end justify-end">
             <!-- Blue Card -->
             <div class="w-full max-w-[195px] h-full max-h-[196px] bg-cardBlue border border-darkBlue rounded-tr-[32px] px-[30px] py-[32px] rounded-bl-[32px] max-md:px-[25px] max-md:py-[25px] max-md:h-auto">
-              <h2 class="w-full font-sans font-medium text-[30px] text-darkBlue  mb-[15px] max-md:text-[26px] max-md:text-left max-md:mb-[5px]">Claim</h2>
-              <p class="font-sans text-gray900 text-[18px] max-md:text-left">Get Support by expert easily.</p>
+              <h2 class="w-full font-sans font-medium text-[30px] text-darkBlue  mb-[15px] max-md:text-[26px] max-md:text-left max-md:mb-[5px]"><?php the_field('blue_card_title_why_us_page_home') ?></h2>
+              <p class="font-sans text-gray900 text-[18px] max-md:text-left"><?php the_field('blue_card_subtitle_why_us_page_home') ?></p>
             </div>
             <img src="<?php echo get_template_directory_uri()?>/assets/square-shape-right.svg" class="object-cover max-md:hidden" alt="square right" title="square right">
           </div>

@@ -15,7 +15,7 @@
                   />
                 </a>
               </div>
-              <p class="mt-8 max-w-xs max-sm:max-w-full text-gray700 max-sm:text-center max-sm:justify-items-center">
+              <p class="mt-8 max-w-[120px] max-sm:max-w-full text-gray700 max-sm:text-center max-sm:justify-items-center">
                 <?php the_field('subtitle_footer', 'options') ?>
               </p>
               <!-- Social Media -->
