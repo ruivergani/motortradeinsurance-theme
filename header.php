@@ -50,84 +50,102 @@
                 />
                 <ul class="py-4 px-4 grid grid-cols-2 gap-x-[30px] gap-y-[8px]">
                   <!-- Dropdown Menu Item-->
-                  <li class="px-[20px] py-[15px] cursor-pointer backdrop:w-full max-w-[336px] border rounded-md border-transparent hover:bg-darkRedOpacity ease-in-out duration-300 relative" id="menu-dropdown-item">
+                  <li class="cursor-pointer backdrop:w-full max-w-[336px] border rounded-md border-transparent hover:bg-darkRedOpacity ease-in-out duration-300 relative" id="menu-dropdown-item">
                     <a href="<?php echo get_permalink(get_page_by_title('Car Traders Insurance')) ?>" class="before:opacity-0 before:top-[30px] before:bg-darkRed before:rounded-r-lg before:absolute before:h-[48px] before:left-0 before:w-[5px] ease-in-out duration-300">
-                      <p class="font-sans text-base font-medium text-gray900 pb-[1px]">
-                        Car Traders Insurance
-                      </p>
-                      <span class="font-sans text-sm font-light text-gray50 leading-4">Low Cost Car Traders Insurance from the specialists.</span>
+                      <div class="px-[20px] py-[15px]">
+                        <p class="font-sans text-base font-medium text-gray900 pb-[1px]">
+                          Car Traders Insurance
+                        </p>
+                        <span class="font-sans text-sm font-light text-gray50 leading-4">Low Cost Car Traders Insurance from the specialists.</span>
+                      </div>
                     </a>
                   </li>
                   <!-- Dropdown Menu Item-->
-                  <li class="px-[20px] py-[15px] cursor-pointer backdrop:w-full max-w-[336px] border rounded-md border-transparent hover:bg-darkRedOpacity ease-in-out duration-300 relative" id="menu-dropdown-item">
+                  <li class="cursor-pointer backdrop:w-full max-w-[336px] border rounded-md border-transparent hover:bg-darkRedOpacity ease-in-out duration-300 relative" id="menu-dropdown-item">
                     <a href="<?php echo get_permalink(get_page_by_title('Mechanics Insurance')) ?>" class="before:opacity-0 before:top-[30px] before:bg-darkRed before:rounded-r-lg before:absolute before:h-[48px] before:left-0 before:w-[5px] ease-in-out duration-300">
+                    <div class="px-[20px] py-[15px]">
                       <p class="font-sans text-base font-medium text-gray900 pb-[1px]">
                         Mechanics Insurance
                       </p>
                       <span class="font-sans text-sm font-light text-gray50 leading-4">Call us today and we'll guarantee our chepeast price*.</span>
+                    </div>
                     </a>
                   </li>
                   <!-- Dropdown Menu Item-->
-                  <li class="px-[20px] py-[15px] cursor-pointer backdrop:w-full max-w-[336px] border rounded-md border-transparent hover:bg-darkRedOpacity ease-in-out duration-300 relative" id="menu-dropdown-item">
+                  <li class="cursor-pointer backdrop:w-full max-w-[336px] border rounded-md border-transparent hover:bg-darkRedOpacity ease-in-out duration-300 relative" id="menu-dropdown-item">
                     <a href="<?php echo get_permalink(get_page_by_title('Valeters Insurance')) ?>" class="before:opacity-0 before:top-[30px] before:bg-darkRed before:rounded-r-lg before:absolute before:h-[48px] before:left-0 before:w-[5px] ease-in-out duration-300">
-                      <p class="font-sans text-base font-medium text-gray900 pb-[1px]">
-                        Valeters Insurance
-                      </p>
-                      <span class="font-sans text-sm font-light text-gray50 leading-4">Insure your valeting business today and save big amount of money.</span>
+                      <div class="px-[20px] py-[15px]">
+                        <p class="font-sans text-base font-medium text-gray900 pb-[1px]">
+                          Valeters Insurance
+                        </p>
+                        <span class="font-sans text-sm font-light text-gray50 leading-4">Insure your valeting business today and save big amount of money.</span>
+                      </div>
                     </a>
                   </li>
                   <!-- Dropdown Menu Item-->
-                  <li class="px-[20px] py-[15px] cursor-pointer backdrop:w-full max-w-[336px] border rounded-md border-transparent hover:bg-darkRedOpacity ease-in-out duration-300 relative" id="menu-dropdown-item">
+                  <li class="cursor-pointer backdrop:w-full max-w-[336px] border rounded-md border-transparent hover:bg-darkRedOpacity ease-in-out duration-300 relative" id="menu-dropdown-item">
                     <a href="<?php echo get_permalink(get_page_by_title('Car Wash Insurance')) ?>" class="before:opacity-0 before:top-[30px] before:bg-darkRed before:rounded-r-lg before:absolute before:h-[48px] before:left-0 before:w-[5px] ease-in-out duration-300">
-                      <p class="font-sans text-base font-medium text-gray900 pb-[1px]">
-                        Car Wash Insurance
-                      </p>
-                      <span class="font-sans text-sm font-light text-gray50 leading-4">Our motor trade insurance policies are as unique as each car wash.</span>
+                      <div class="px-[20px] py-[15px]">
+                        <p class="font-sans text-base font-medium text-gray900 pb-[1px]">
+                          Car Wash Insurance
+                        </p>
+                        <span class="font-sans text-sm font-light text-gray50 leading-4">Our motor trade insurance policies are as unique as each car wash.</span>
+                      </div>
                     </a>
                   </li>
                   <!-- Dropdown Menu Item-->
-                  <li class="px-[20px] py-[15px] cursor-pointer backdrop:w-full max-w-[336px] border rounded-md border-transparent hover:bg-darkRedOpacity ease-in-out duration-300 relative" id="menu-dropdown-item">
+                  <li class="cursor-pointer backdrop:w-full max-w-[336px] border rounded-md border-transparent hover:bg-darkRedOpacity ease-in-out duration-300 relative" id="menu-dropdown-item">
                     <a href="<?php echo get_permalink(get_page_by_title('Mobile Mechanic Insurance')) ?>" class="before:opacity-0 before:top-[30px] before:bg-darkRed before:rounded-r-lg before:absolute before:h-[48px] before:left-0 before:w-[5px] ease-in-out duration-300">
-                      <p class="font-sans text-base font-medium text-gray900 pb-[1px]">
-                        Mobile Mechanic Insurance
-                      </p>
-                      <span class="font-sans text-sm font-light text-gray50 leading-4">Insure more than just road risk with mobile mechanics insurance.</span>
+                      <div class="px-[20px] py-[15px]">
+                        <p class="font-sans text-base font-medium text-gray900 pb-[1px]">
+                          Mobile Mechanic Insurance
+                        </p>
+                        <span class="font-sans text-sm font-light text-gray50 leading-4">Insure more than just road risk with mobile mechanics insurance.</span>
+                      </div>
                     </a>
                   </li>
                   <!-- Dropdown Menu Item-->
-                  <li class="px-[20px] py-[15px] cursor-pointer backdrop:w-full max-w-[336px] border rounded-md border-transparent hover:bg-darkRedOpacity ease-in-out duration-300 relative" id="menu-dropdown-item">
+                  <li class="cursor-pointer backdrop:w-full max-w-[336px] border rounded-md border-transparent hover:bg-darkRedOpacity ease-in-out duration-300 relative" id="menu-dropdown-item">
                     <a href="<?php echo get_permalink(get_page_by_title('HGV Motor Trade Insurance')) ?>" class="before:opacity-0 before:top-[30px] before:bg-darkRed before:rounded-r-lg before:absolute before:h-[48px] before:left-0 before:w-[5px] ease-in-out duration-300">
-                      <p class="font-sans text-base font-medium text-gray900 pb-[1px]">
-                        HGV Motor Trade Insurance
-                      </p>
-                      <span class="font-sans text-sm font-light text-gray50 leading-4">Low Cost HGV Motor Trade Insurance from the specialists.</span>
+                      <div class="px-[20px] py-[15px]">
+                        <p class="font-sans text-base font-medium text-gray900 pb-[1px]">
+                          HGV Motor Trade Insurance
+                        </p>
+                        <span class="font-sans text-sm font-light text-gray50 leading-4">Low Cost HGV Motor Trade Insurance from the specialists.</span>
+                      </div>
                     </a>
                   </li>
                   <!-- Dropdown Menu Item-->
-                  <li class="px-[20px] py-[15px] cursor-pointer backdrop:w-full max-w-[336px] border rounded-md border-transparent hover:bg-darkRedOpacity ease-in-out duration-300 relative" id="menu-dropdown-item">
+                  <li class="cursor-pointer backdrop:w-full max-w-[336px] border rounded-md border-transparent hover:bg-darkRedOpacity ease-in-out duration-300 relative" id="menu-dropdown-item">
                     <a href="<?php echo get_permalink(get_page_by_title('Tyre Fitter Insurance')) ?>" class="before:opacity-0 before:top-[30px] before:bg-darkRed before:rounded-r-lg before:absolute before:h-[48px] before:left-0 before:w-[5px] ease-in-out duration-300">
-                      <p class="font-sans text-base font-medium text-gray900 pb-[1px]">
-                        Tyre Fitter Insurance
-                      </p>
-                      <span class="font-sans text-sm font-light text-gray50 leading-4">Protect your business today with our windscreen, exhaust and tyre fitter insurance.</span>
+                      <div class="px-[20px] py-[15px]">
+                        <p class="font-sans text-base font-medium text-gray900 pb-[1px]">
+                          Tyre Fitter Insurance
+                        </p>
+                        <span class="font-sans text-sm font-light text-gray50 leading-4">Protect your business today with our windscreen, exhaust and tyre fitter insurance.</span>
+                      </div>
                     </a>
                   </li>
                   <!-- Dropdown Menu Item-->
-                  <li class="px-[20px] py-[15px] cursor-pointer backdrop:w-full max-w-[336px] border rounded-md border-transparent hover:bg-darkRedOpacity ease-in-out duration-300 relative" id="menu-dropdown-item">
+                  <li class="cursor-pointer backdrop:w-full max-w-[336px] border rounded-md border-transparent hover:bg-darkRedOpacity ease-in-out duration-300 relative" id="menu-dropdown-item">
                     <a href="<?php echo get_permalink(get_page_by_title('Part-Time Motor Trade Insurance')) ?>" class="before:opacity-0 before:top-[30px] before:bg-darkRed before:rounded-r-lg before:absolute before:h-[48px] before:left-0 before:w-[5px] ease-in-out duration-300">
-                      <p class="font-sans text-base font-medium text-gray900 pb-[1px]">
-                        Part-Time Motor Trade Insurance
-                      </p>
-                      <span class="font-sans text-sm font-light text-gray50 leading-4">Specialized insurance for anyone in the motor trade industry on a part-time basis.</span>
+                      <div class="px-[20px] py-[15px]">
+                        <p class="font-sans text-base font-medium text-gray900 pb-[1px]">
+                          Part-Time Motor Trade Insurance
+                        </p>
+                        <span class="font-sans text-sm font-light text-gray50 leading-4">Specialized insurance for anyone in the motor trade industry on a part-time basis.</span>
+                      </div>
                     </a>
                   </li>
                   <!-- Dropdown Menu Item-->
-                  <li class="px-[20px] py-[15px] cursor-pointer backdrop:w-full max-w-[336px] border rounded-md border-transparent hover:bg-darkRedOpacity ease-in-out duration-300 relative" id="menu-dropdown-item">
+                  <li class="cursor-pointer backdrop:w-full max-w-[336px] border rounded-md border-transparent hover:bg-darkRedOpacity ease-in-out duration-300 relative" id="menu-dropdown-item">
                     <a href="<?php echo get_permalink(get_page_by_title('Trade Plate Insurance')) ?>" class="before:opacity-0 before:top-[30px] before:bg-darkRed before:rounded-r-lg before:absolute before:h-[48px] before:left-0 before:w-[5px] ease-in-out duration-300">
-                      <p class="font-sans text-base font-medium text-gray900 pb-[1px]">
-                        Trade Plate Insurance
-                      </p>
-                      <span class="font-sans text-sm font-light text-gray50 leading-4">Specialized motor trade insurance that includes any trade plate vehicles registered on the MID.</span>
+                      <div class="px-[20px] py-[15px]">
+                        <p class="font-sans text-base font-medium text-gray900 pb-[1px]">
+                          Trade Plate Insurance
+                        </p>
+                        <span class="font-sans text-sm font-light text-gray50 leading-4">Specialized motor trade insurance that includes any trade plate vehicles registered on the MID.</span>
+                      </div>
                     </a>
                   </li>
                 </ul>

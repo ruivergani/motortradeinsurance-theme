@@ -116,7 +116,7 @@
         <div class="relative">
           <!-- Red Card -->
           <div class="w-full max-w-[336px] h-full max-h-[310px] border rounded-tr-[32px] rounded-bl-[32px] max-md:h-auto">
-            <img src="<?php echo get_template_directory_uri() ?>/assets/image_hgv_truck.png" alt="" class="object-cover h-full rounded-tr-[32px] rounded-bl-[32px]">
+            <img src="<?php the_field('image_card_title_why_us_page_hgv_motor_trade_insurance') ?>" alt="" class="object-cover h-full rounded-tr-[32px] rounded-bl-[32px]">
           </div>
           <img src="<?php echo get_template_directory_uri() ?>/assets/icon-left-surprise.svg" alt="icon left" title="icon left" class="absolute left-[-35px] bottom-[-40px] max-md:hidden">
         </div>

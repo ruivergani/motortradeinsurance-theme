@@ -78,8 +78,8 @@
         <ul class="my-[35px] max-sm:my-[15px] max-lg:my-[25px]">
           <!-- Repeater -->
           <?php if( have_rows('bullet_list_hero_page_home') ): while ( have_rows('bullet_list_hero_page_home') ) : the_row(); ?>
-            <li class="flex justify-start items-center gap-[15px] mb-[10px] text-[17px] max-sm:items-start max-sm:justify-start max-sm:gap-4 max-lg:text-[16px]">
-              <i class="ph-bold ph-check text-[18px] max-lg:text-[17px] max-sm:mt-1"></i>
+            <li class="flex justify-start items-center gap-[15px] mb-[10px] text-[18px] max-sm:items-start max-sm:justify-start max-sm:gap-4 max-lg:text-[16px]">
+              <i class="ph-bold ph-check text-[18px] max-sm:mt-1"></i>
               <p class="font-sans text-gray900 tracking-[0.18px] max-sm:text-left"><?php the_sub_field('content_bullet_list') ?></p>
             </li>
           <?php endwhile; else : endif;?>
