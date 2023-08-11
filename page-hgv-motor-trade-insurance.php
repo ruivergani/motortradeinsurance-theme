@@ -76,7 +76,11 @@
     <div class="w-full max-w-[584px] max-lg:max-w-full flex flex-col items-start justify-start max-lg:justify-center max-lg:items-center">
       <span class="block font-sans uppercase text-gray700 tracking-wider pb-[20px] max-sm:text-sm max-md:text-md max-lg:py-[10px]"><?php the_field('subtitle_hero_page_hgv_motor_trade_insurance') ?></span>
       <h2 class="font-sans text-gray900 pb-[25px] text-[56px] max-sm:text-[26px] max-md:text-[28px] max-lg:text-[30px] max-lg:pb-[15px] tracking-wider leading-[60px]">
-        <?php the_field('title_hero_page_hgv_motor_trade_insurance') ?>
+        HGV
+        <span class="before:block before:absolute before:-inset-1 before:-skew-y-2 before:bg-yellow-400 relative inline-block mt-3">
+          <span class="relative ">Motor Trade</span>
+        </span>
+        Insurance
       </h2>
       <p class="w-full max-w-[494px] text-[18px] font-sans font-normal tracking-[0.18px] leading-[25px] max-lg:text-[16px]">
         <?php the_field('paragraph_hero_page_hgv_motor_trade_insurance') ?></p>
@@ -97,7 +101,7 @@
         <i class="ph-bold ph-arrow-right font-semibold text-[18px]"></i>
       </button>
     </div>
-    <div class="w-full max-w-[537px] flex flex-col gap-[15px]">
+    <div class="w-full max-w-[540px] flex flex-col max-sm:flex-col-reverse max-lg:gap-[15px]">
       <!-- Yellow Card -->
       <div class="flex flex-row justify-between items-end max-sm:flex-col max-sm:items-center max-sm:justify-center">
         <img src="<?php echo get_template_directory_uri() ?>/assets/square-shape-left.svg" alt="square left" title="square left" class="w-full max-w-[112px] max-sm:hidden">
@@ -108,15 +112,11 @@
           <p class="font-sans text-gray900 text-[18px] max-md:text-left"><?php the_field('yellow_card_subtitle_why_us_page_hgv_motor_trade_insurance') ?></p>
         </div>
       </div>
-      <div
-        class="mt-[40px] flex flex-row justify-between max-lg:mt-[20px] max-md:gap-[20px] max-sm:flex-col max-sm:items-center max-sm:justify-center max-sm:mt-[0px] max-sm:gap-[15px]">
+      <div class="mt-[40px] flex flex-row justify-between max-lg:mt-[20px] gap-[30px] max-md:gap-[20px] max-sm:flex-col max-sm:items-center max-sm:justify-center max-sm:mt-[0px] max-sm:gap-[15px]">
         <div class="relative">
           <!-- Red Card -->
-          <div class="w-full max-w-[293px] h-full max-h-[280px] bg-cardRed border border-darkRed rounded-tr-[32px] px-[38px] py-[54px] rounded-bl-[32px] max-md:px-[20px] max-md:py-[20px] max-md:h-auto">
-            <h2 class="w-full max-w-[195px] font-sans font-medium text-[30px] text-darkRed mb-[15px] max-md:text-[26px] max-md:text-left max-md:mb-[5px]">
-              <?php the_field('red_card_title_why_us_page_hgv_motor_trade_insurance') ?>
-            </h2>
-            <p class="font-sans text-gray900 text-[18px] max-md:text-left"><?php the_field('red_card_subtitle_why_us_page_hgv_motor_trade_insurance') ?></p>
+          <div class="w-full max-w-[336px] h-full max-h-[310px] border rounded-tr-[32px] rounded-bl-[32px] max-md:h-auto">
+            <img src="<?php echo get_template_directory_uri() ?>/assets/image_hgv_truck.png" alt="" class="object-cover h-full rounded-tr-[32px] rounded-bl-[32px]">
           </div>
           <img src="<?php echo get_template_directory_uri() ?>/assets/icon-left-surprise.svg" alt="icon left" title="icon left" class="absolute left-[-35px] bottom-[-40px] max-md:hidden">
         </div>
@@ -165,9 +165,9 @@
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
                 </svg>
               </summary>
-              <p class="mt-4 px-4 leading-relaxed text-gray700 font-sans">
+              <div class="mt-4 px-4 leading-relaxed text-gray700 font-sans">
                 <?php the_sub_field('content_items_why_us_page_hgv_motor_trade_insurance') ?>
-              </p>
+              </div>
             </details>
           <?php endwhile; else : endif;?>
         </div>
@@ -263,9 +263,9 @@
                   </svg>
                 </span>
               </summary>
-              <p class="mt-4 leading-relaxed text-gray700 font-sans">
+              <div class="mt-4 leading-relaxed text-gray700 font-sans">
                 <?php the_sub_field('content_faq_page_hgv_motor_trade_insurance') ?>
-              </p>
+              </div>
             </details>
           <?php endwhile; else : endif;?>
         </div>

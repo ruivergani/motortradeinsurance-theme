@@ -60,15 +60,13 @@ gulp.task('pluginjs', pluginsJs);
 // Task to start a local server using BrowserSync and watch for changes in SCSS, CSS, HTML, and JS files
 gulp.task('serve', function () {
   browserSync.init({
-    server: {
-      baseDir: "./"
-    },
+    proxy: "localhost:10029/",
     browser: "/Applications/Google Chrome.app/" // default Chrome
   });
 
   gulp.watch('./src/scss/*.scss', gulp.series('sass'));
   gulp.watch('./src/css/libs/*.css', pluginsCSS);
-  gulp.watch('**/*.html').on('change', gulp.series('sass', browserSync.reload));
+  gulp.watch('**/*.php').on('change', gulp.series('sass', browserSync.reload));
   gulp.watch('./src/js/scripts/*js', gulpJs);
   gulp.watch('./src/js/libs/*.js', pluginsJs);
 });
