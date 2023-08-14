@@ -310,6 +310,5 @@
   </section>
 </div>
 
-
 <!-- Include Footer -->
 <?php get_footer(); ?> 
