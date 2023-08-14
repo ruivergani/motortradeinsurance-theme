@@ -74,7 +74,7 @@
 <div class="w-full max-w-[1246px] mx-auto px-[15px]">
   <section class="flex justify-between items-start flex-row max-lg:flex-col max-lg:items-center max-lg:text-center max-lg:justify-center py-[80px] gap-[20px]  max-sm:py-[40px] max-md:py-[60px] max-lg:gap-[40px]">
     <div class="w-full max-w-[584px] max-lg:max-w-full flex flex-col items-start justify-start max-lg:justify-center max-lg:items-center">
-      <span class="block font-sans uppercase text-gray700 tracking-wider pb-[20px] max-sm:text-sm max-md:text-md max-lg:py-[10px]"><?php the_field('subtitle_hero_page_car_wash_insurance') ?></span>
+      <span class="block font-sans uppercase text-gray700 tracking-wider pb-[20px] max-sm:text-sm max-md:text-md max-lg:py-[10px]"><?php the_field('subtitle_hero_page_mechanics_insurance') ?></span>
       <h2 class="font-sans text-gray900 pb-[25px] text-[56px] max-sm:text-[26px] max-md:text-[28px] max-lg:text-[30px] max-lg:pb-[15px] tracking-wider leading-[60px]">
         HGV
         <span class="before:block before:absolute before:-inset-1 before:-skew-y-2 before:bg-yellow-400 relative inline-block mt-3">
@@ -83,13 +83,13 @@
         Insurance
       </h2>
       <p class="w-full max-w-[494px] text-[18px] font-sans font-normal tracking-[0.18px] leading-[25px] max-lg:text-[16px]">
-        <?php the_field('paragraph_hero_page_car_wash_insurance') ?></p>
+        <?php the_field('paragraph_hero_page_mechanics_insurance') ?></p>
       <ul class="my-[35px] max-sm:my-[15px] max-lg:my-[25px]">
         <!-- Repeater -->
-        <?php if( have_rows('bullet_list_hero_page_car_wash_insurance') ): while ( have_rows('bullet_list_hero_page_car_wash_insurance') ) : the_row(); ?>
+        <?php if( have_rows('bullet_list_hero_page_mechanics_insurance') ): while ( have_rows('bullet_list_hero_page_mechanics_insurance') ) : the_row(); ?>
           <li class="flex justify-start items-center gap-[15px] mb-[10px] text-[17px] max-sm:items-start max-sm:justify-start max-sm:gap-4 max-lg:text-[16px]">
             <i class="ph-bold ph-check text-[18px] max-lg:text-[17px] max-sm:mt-1"></i>
-            <p class="font-sans text-gray900 tracking-[0.18px] max-sm:text-left"><?php the_sub_field('content_bullet_list_page_car_wash_insurance') ?></p>
+            <p class="font-sans text-gray900 tracking-[0.18px] max-sm:text-left"><?php the_sub_field('content_bullet_list_page_mechanics_insurance') ?></p>
           </li>
         <?php endwhile; else : endif;?>
       </ul>
@@ -107,16 +107,16 @@
         <img src="<?php echo get_template_directory_uri() ?>/assets/square-shape-left.svg" alt="square left" title="square left" class="w-full max-w-[112px] max-sm:hidden">
         <div class="w-full max-w-[305px] h-full max-h-[203px] p-[38px] bg-cardYellow border border-darkYellow rounded-tr-[32px] rounded-bl-[32px] max-md:p-[20px]">
           <h2 class="w-full max-w-[242px] font-sans font-medium text-[30px] text-darkYellow mb-[15px] max-md:text-[26px] max-md:text-left max-md:mb-[5px]">
-            <?php the_field('yellow_card_title_why_us_page_car_wash_insurance') ?>
+            <?php the_field('yellow_card_title_why_us_page_mechanics_insurance') ?>
           </h2>
-          <p class="font-sans text-gray900 text-[18px] max-md:text-left"><?php the_field('yellow_card_subtitle_why_us_page_car_wash_insurance') ?></p>
+          <p class="font-sans text-gray900 text-[18px] max-md:text-left"><?php the_field('yellow_card_subtitle_why_us_page_mechanics_insurance') ?></p>
         </div>
       </div>
       <div class="mt-[40px] flex flex-row justify-between max-lg:mt-[20px] gap-[30px] max-md:gap-[20px] max-sm:flex-col max-sm:items-center max-sm:justify-center max-sm:mt-[0px] max-sm:gap-[15px]">
         <div class="relative">
           <!-- Red Card -->
           <div class="w-full max-w-[336px] h-full max-h-[310px] border rounded-tr-[32px] rounded-bl-[32px] max-md:h-auto">
-            <img src="<?php the_field('image_card_title_why_us_page_car_wash_insurance') ?>" alt="" class="object-cover h-full rounded-tr-[32px] rounded-bl-[32px]">
+            <img src="<?php the_field('image_card_title_why_us_page_mechanics_insurance') ?>" alt="" class="object-cover h-full rounded-tr-[32px] rounded-bl-[32px]">
           </div>
           <img src="<?php echo get_template_directory_uri() ?>/assets/icon-left-surprise.svg" alt="icon left" title="icon left" class="absolute left-[-35px] bottom-[-40px] max-md:hidden">
         </div>
@@ -124,9 +124,9 @@
           <!-- Blue Card -->
           <div class="w-full max-w-[195px] h-full max-h-[196px] bg-cardBlue border border-darkBlue rounded-tr-[32px] px-[30px] py-[32px] rounded-bl-[32px] max-md:px-[25px] max-md:py-[25px] max-md:h-auto">
             <h2 class="w-full font-sans font-medium text-[30px] text-darkBlue  mb-[15px] max-md:text-[26px] max-md:text-left max-md:mb-[5px]">
-              <?php the_field('blue_card_title_why_us_page_car_wash_insurance') ?>
+              <?php the_field('blue_card_title_why_us_page_mechanics_insurance') ?>
             </h2>
-            <p class="font-sans text-gray900 text-[18px] max-md:text-left"><?php the_field('blue_card_subtitle_why_us_page_car_wash_insurance') ?></p>
+            <p class="font-sans text-gray900 text-[18px] max-md:text-left"><?php the_field('blue_card_subtitle_why_us_page_mechanics_insurance') ?></p>
           </div>
           <img src="<?php echo get_template_directory_uri() ?>/assets/square-shape-right.svg" class="object-cover max-md:hidden" alt="square right" title="square right">
         </div>
@@ -139,26 +139,26 @@
 <div class="w-full max-w-[1246px] mx-auto px-[15px]">
   <section class="py-[100px] max-sm:py-[30px] max-lg:py-[60px] flex justify-between items-start gap-[20px] max-md:flex-col-reverse">
     <div class="flex gap-[30px] max-sm:gap-[20px] flex-col w-full max-w-[559px] max-md:max-w-full">
-      <img src="<?php the_field('image_why_us_page_car_wash_insurance') ?>" alt="" class="object-cover w-full max-w-[559px] max-md:max-w-full">
-      <span class="font-sans text-gray700 text-sm"><?php the_field('terms_conditions_why_us_page_car_wash_insurance') ?></span>
+      <img src="<?php the_field('image_why_us_page_mechanics_insurance') ?>" alt="" class="object-cover w-full max-w-[559px] max-md:max-w-full">
+      <span class="font-sans text-gray700 text-sm"><?php the_field('terms_conditions_why_us_page_mechanics_insurance') ?></span>
     </div>
     <div class="w-full max-w-[584px] max-md:max-w-full">
       <div>
         <span class="font-sans block uppercase text-gray700 tracking-wider pb-[8px] max-sm:text-sm max-md:text-md max-sm:text-center">
-          <?php the_field('subtitle_why_us_page_car_wash_insurance') ?>
+          <?php the_field('subtitle_why_us_page_mechanics_insurance') ?>
         </span>
         <h2 class="font-sans text-gray900 text-[40px] max-sm:text-[26px] max-sm:text-center max-md:text-[28px] max-lg:text-[30px]">
-          <?php the_field('title_why_us_page_car_wash_insurance') ?>
+          <?php the_field('title_why_us_page_mechanics_insurance') ?>
         </h2>
       </div>
       <div class="mt-[40px] max-sm:mt-[20px] max-md:mt-[30px]">
         <div class="space-y-4">
           <!-- Repeater -->
-          <?php if( have_rows('repeater_why_us_page_car_wash_insurance') ): while ( have_rows('repeater_why_us_page_car_wash_insurance') ) : the_row(); ?>
+          <?php if( have_rows('repeater_why_us_page_mechanics_insurance') ): while ( have_rows('repeater_why_us_page_mechanics_insurance') ) : the_row(); ?>
             <details class="group [&_summary::-webkit-details-marker]:hidden">
               <summary class="flex cursor-pointer items-center justify-between gap-1.5 rounded-lg bg-gray100 p-5 text-gray900 max-sm:p-4">
                 <h2 class="font-medium font-sans text-gray900 text-[18px] max-sm:text-[16px]">
-                  <?php the_sub_field('title_items_why_us_page_car_wash_insurance') ?>
+                  <?php the_sub_field('title_items_why_us_page_mechanics_insurance') ?>
                 </h2>
                 <svg class="h-5 w-5 shrink-0 transition duration-300 group-open:-rotate-180"
                   xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -166,7 +166,7 @@
                 </svg>
               </summary>
               <div class="mt-4 px-4 leading-relaxed text-gray700 font-sans">
-                <?php the_sub_field('content_items_why_us_page_car_wash_insurance') ?>
+                <?php the_sub_field('content_items_why_us_page_mechanics_insurance') ?>
               </div>
             </details>
           <?php endwhile; else : endif;?>
@@ -181,9 +181,9 @@
   <div
     class="w-full flex justify-between items-center py-[50px] px-[72px] max-md:flex-col max-md:gap-5 max-md:py-[20px] max-md:px-[20px] bg-gray900 rounded-[30px]">
     <div class="max-md:flex max-md:text-center max-md:justify-center max-md:flex-col">
-      <span class="font-sans uppercase font-semibold text-[14px] text-lightRed mb-[5px] max-md:text-center"><?php the_field('subtitle_black_cta_page_car_wash_insurance') ?></span>
+      <span class="font-sans uppercase font-semibold text-[14px] text-lightRed mb-[5px] max-md:text-center"><?php the_field('subtitle_black_cta_page_mechanics_insurance') ?></span>
       <h2 class="font-sans font-bold text-[32px] text-white max-sm:text-[26px] max-md:text-[28px] max-md:text-center">
-        <?php the_field('title_black_cta_page_car_wash_insurance') ?>
+        <?php the_field('title_black_cta_page_mechanics_insurance') ?>
       </h2>
     </div>
     <button
@@ -198,16 +198,16 @@
 <div class="w-full max-w-[1246px] mx-auto px-[15px]">
   <section class="py-[100px] max-sm:py-[30px] max-md:py-[60px] max-lg:py-[60px] flex flex-row justify-between items-center gap-[20px] max-lg:flex-col max-lg:justify-center">
     <div class="w-full max-w-[592px] max-lg:max-w-full">
-      <span class="font-sans uppercase text-gray700 tracking-wider pb-[8px] max-sm:text-sm max-md:text-md"><?php the_field('subtitle_section_left_page_car_wash_insurance') ?></span>
+      <span class="font-sans uppercase text-gray700 tracking-wider pb-[8px] max-sm:text-sm max-md:text-md"><?php the_field('subtitle_section_left_page_mechanics_insurance') ?></span>
       <h2 class="font-sans text-gray900 pb-[25px] text-[40px] max-sm:text-[26px] max-md:text-[28px] max-lg:text-[30px] max-lg:pb-[15px]">
-        <?php the_field('title_section_left_page_car_wash_insurance') ?>
+        <?php the_field('title_section_left_page_mechanics_insurance') ?>
       </h2>
       <div class="content-text">
-        <?php the_field('content_section_left_page_car_wash_insurance') ?>
+        <?php the_field('content_section_left_page_mechanics_insurance') ?>
       </div>
     </div>
     <div class="w-full max-w-[520px]">
-      <img src="<?php the_field('image_section_left_page_car_wash_insurance') ?>" alt="" class="object-cover w-full">
+      <img src="<?php the_field('image_section_left_page_mechanics_insurance') ?>" alt="" class="object-cover w-full">
     </div>
   </section>
 </div>
@@ -216,15 +216,15 @@
 <div class="w-full max-w-[1246px] mx-auto px-[15px]">
   <section class="pb-[100px] max-sm:pb-[30px] max-md:pb-[40px] flex flex-row justify-between items-center gap-[20px] max-lg:flex-col max-lg:justify-center">
     <div class="w-full max-w-[520px]">
-      <img src="<?php the_field('image_section_right_page_car_wash_insurance') ?>" alt="" class="object-cover w-full">
+      <img src="<?php the_field('image_section_right_page_mechanics_insurance') ?>" alt="" class="object-cover w-full">
     </div>
     <div class="w-full max-w-[592px] max-lg:max-w-full">
-      <span class="font-sans uppercase text-gray700 tracking-wider pb-[8px] max-sm:text-sm max-md:text-md"><?php the_field('subtitle_section_right_page_car_wash_insurance') ?></span>
+      <span class="font-sans uppercase text-gray700 tracking-wider pb-[8px] max-sm:text-sm max-md:text-md"><?php the_field('subtitle_section_right_page_mechanics_insurance') ?></span>
       <h2 class="font-sans text-gray900 pb-[25px] text-[40px] max-sm:text-[26px] max-md:text-[28px] max-lg:text-[30px] max-lg:pb-[15px]">
-        <?php the_field('title_section_right_page_car_wash_insurance') ?>
+        <?php the_field('title_section_right_page_mechanics_insurance') ?>
       </h2>
       <div class="content-text">
-        <?php the_field('content_section_right_page_car_wash_insurance') ?>
+        <?php the_field('content_section_right_page_mechanics_insurance') ?>
       </div>
     </div>
   </section>
@@ -235,23 +235,23 @@
   <section class="py-[100px] max-sm:py-[30px] max-lg:py-[60px]">
     <div class="flex justify-between items-center mb-[50px] max-sm:mb-[30px] max-lg:mb-[50px] max-md:flex-col max-md:text-center max-md:justify-center max-md:gap-[20px]">
       <div>
-        <span class="font-sans uppercase text-gray700 tracking-wider pb-[8px] max-sm:text-sm max-md:text-md"><?php the_field('subtitle_faqs_page_car_wash_insurance') ?></span>
+        <span class="font-sans uppercase text-gray700 tracking-wider pb-[8px] max-sm:text-sm max-md:text-md"><?php the_field('subtitle_faqs_page_mechanics_insurance') ?></span>
         <h2 class="font-sans text-gray900 text-[40px] max-sm:text-[26px] max-md:text-[28px] max-lg:text-[30px]">
-          <?php the_field('title_faqs_page_car_wash_insurance') ?>
+          <?php the_field('title_faqs_page_mechanics_insurance') ?>
         </h2>
       </div>
-      <p class="w-full max-w-[400px] max-lg:text-[15px]"><?php the_field('paragraph_right_faqs_page_car_wash_insurance') ?></p>
+      <p class="w-full max-w-[400px] max-lg:text-[15px]"><?php the_field('paragraph_right_faqs_page_mechanics_insurance') ?></p>
     </div>
     <div>
       <div class="grid grid-cols-1 gap-[32px]">
         <div class="space-y-4">
           <!-- Repeater -->
-          <?php if( have_rows('repeater_faq_page_car_wash_insurance') ): while ( have_rows('repeater_faq_page_car_wash_insurance') ) : the_row(); ?>
+          <?php if( have_rows('repeater_faq_page_mechanics_insurance') ): while ( have_rows('repeater_faq_page_mechanics_insurance') ) : the_row(); ?>
             <!-- Each FAQ -->
             <details class="group border-s-4 border-darkRed rounded-md bg-gray-50 p-6 [&_summary::-webkit-details-marker]:hidden">
               <summary class="flex cursor-pointer items-center justify-between gap-1.5">
                 <h2 class="text-lg font-medium text-gray-900 max-sm:text-[16px] font-sans">
-                  <?php the_sub_field('title_faq_page_car_wash_insurance') ?>
+                  <?php the_sub_field('title_faq_page_mechanics_insurance') ?>
                 </h2>
                 <span class="shrink-0 rounded-full bg-white p-1.5 text-gray-900 sm:p-3 font-sans">
                   <svg xmlns="http://www.w3.org/2000/svg"
@@ -264,7 +264,7 @@
                 </span>
               </summary>
               <div class="mt-4 leading-relaxed text-gray700 font-sans">
-                <?php the_sub_field('content_faq_page_car_wash_insurance') ?>
+                <?php the_sub_field('content_faq_page_mechanics_insurance') ?>
               </div>
             </details>
           <?php endwhile; else : endif;?>
@@ -281,19 +281,19 @@
       <div class="grid grid-cols-1 gap-4 lg:grid-cols-2">
         <div class="grid grid-cols-2 gap-4 lg:grid-cols-2">
           <img alt="" title=""
-            src="<?php the_field('image01_page_car_wash_insurance') ?>"
+            src="<?php the_field('image01_page_mechanics_insurance') ?>"
             class="h-40 w-full object-cover sm:h-56 lg:h-full rounded-sm" />
           <img alt="" title=""
-            src="<?php the_field('image02_page_car_wash_insurance') ?>"
+            src="<?php the_field('image02_page_mechanics_insurance') ?>"
             class="h-40 w-full object-cover sm:h-56 lg:h-full rounded-sm" />
         </div>
         <div class="bg-lightYellow border border-darkYellow rounded-md p-8 md:p-12 lg:px-16 lg:py-24">
           <div class="mx-auto max-w-xl text-center">
             <h2 class="text-2xl font-bold text-gray900 md:text-3xl">
-              <?php the_field('title_cta_page_car_wash_insurance') ?>
+              <?php the_field('title_cta_page_mechanics_insurance') ?>
             </h2>
             <p class="hidden text-gray700 sm:mt-4 sm:block">
-              <?php the_field('subtitle_cta_page_car_wash_insurance') ?>
+              <?php the_field('subtitle_cta_page_mechanics_insurance') ?>
             </p>
             <div class="mt-4 md:mt-8">
               <!-- Get a Quote CTA Button -->
