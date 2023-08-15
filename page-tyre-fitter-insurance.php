@@ -141,7 +141,7 @@
   <div class="w-full max-w-[1246px] mx-auto px-[15px]">
     <section class="py-[100px] max-sm:py-[30px] max-lg:py-[60px] flex justify-between items-start gap-[20px] max-md:flex-col-reverse">
       <div class="flex gap-[30px] max-sm:gap-[20px] flex-col w-full max-w-[559px] max-md:max-w-full">
-        <img src="<?php the_field('image_why_us_page_tyre_fitter_insurance') ?>" alt="" class="object-cover w-full max-w-[559px] max-md:max-w-full">
+        <img src="<?php the_field('image_why_us_page_tyre_fitter_insurance') ?>" alt="" class="object-cover w-full max-w-[559px] max-md:max-w-full rounded-md">
         <span class="font-sans text-gray700 text-sm"><?php the_field('terms_conditions_why_us_page_tyre_fitter_insurance') ?></span>
       </div>
       <div class="w-full max-w-[584px] max-md:max-w-full">
