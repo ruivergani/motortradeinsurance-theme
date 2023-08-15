@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title><?php bloginfo('name'); echo ' - '; is_front_page() ? bloginfo('description') : wp_title(''); ?></title>
+  <title><?php is_front_page() ? bloginfo('description') : wp_title(''); echo ' - '; bloginfo('name');   ?></title>
   <meta name="description" content="" />
   <!-- Favicon -->
   <link rel="shortcut icon" type="image/svg" href="<?php echo get_template_directory_uri()?>/favicon.png" />
@@ -37,7 +37,7 @@
             <!-- Item Menu-->
             <li>
               <a tabindex="0" class="cursor-default flex items-center gap-3 js-btn-menu" aria-label="Road Risk Insurance Menu">
-                <span class="font-sans font-medium text-lg text-gray-900">Road Risk Insurance</span>
+                <span class="font-sans font-medium text-lg text-gray-900">All Insurance Type</span>
                 <i class="ph-bold ph-caret-down text-lg"></i>
               </a>
               <!-- Dropdown Menu -->
@@ -49,6 +49,17 @@
                   title="icon menu dropdown"
                 />
                 <ul class="py-4 px-4 grid grid-cols-2 gap-x-[30px] gap-y-[8px]">
+                  <!-- Dropdown Menu Item-->
+                  <li class="cursor-pointer backdrop:w-full max-w-[336px] border rounded-md border-transparent hover:bg-darkRedOpacity ease-in-out duration-300 relative" id="menu-dropdown-item">
+                    <a href="<?php echo get_permalink(get_page_by_title('Road Risk Insurance')) ?>" class="before:opacity-0 before:top-[30px] before:bg-darkRed before:rounded-r-lg before:absolute before:h-[48px] before:left-0 before:w-[5px] ease-in-out duration-300">
+                      <div class="px-[20px] py-[15px]">
+                        <p class="font-sans text-base font-medium text-gray900 pb-[1px]">
+                          Road Risk Insurance
+                        </p>
+                        <span class="font-sans text-sm font-light text-gray50 leading-4">Road Risk Insurance is the basic form of motor trade insurance mandated by law.</span>
+                      </div>
+                    </a>
+                  </li>
                   <!-- Dropdown Menu Item-->
                   <li class="cursor-pointer backdrop:w-full max-w-[336px] border rounded-md border-transparent hover:bg-darkRedOpacity ease-in-out duration-300 relative" id="menu-dropdown-item">
                     <a href="<?php echo get_permalink(get_page_by_title('Car Traders Insurance')) ?>" class="before:opacity-0 before:top-[30px] before:bg-darkRed before:rounded-r-lg before:absolute before:h-[48px] before:left-0 before:w-[5px] ease-in-out duration-300">

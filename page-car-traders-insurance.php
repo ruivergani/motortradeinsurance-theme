@@ -78,20 +78,20 @@
       <div class="w-full max-w-[584px] max-lg:max-w-full flex flex-col items-start justify-start max-lg:justify-center max-lg:items-center">
         <span class="block font-sans uppercase text-gray700 tracking-wider pb-[20px] max-sm:text-sm max-md:text-md max-lg:py-[10px]"><?php the_field('subtitle_hero_page_car_traders_insurance') ?></span>
         <h2 class="font-sans text-gray900 pb-[25px] text-[56px] max-sm:text-[26px] max-md:text-[28px] max-lg:text-[30px] max-lg:pb-[15px] tracking-wider leading-[60px]">
-          HGV
           <span class="before:block before:absolute before:-inset-1 before:-skew-y-2 before:bg-yellow-400 relative inline-block mt-3">
-            <span class="relative ">Motor Trade</span>
+            <span class="relative ">Car Traders</span>
           </span>
           Insurance
         </h2>
         <p class="w-full max-w-[494px] text-[18px] font-sans font-normal tracking-[0.18px] leading-[25px] max-lg:text-[16px]">
-          <?php the_field('paragraph_hero_page_car_traders_insurance') ?></p>
+          <?php the_field('paragraph_hero_page_car_traders_insurance') ?>
+        </p>
         <ul class="my-[35px] max-sm:my-[15px] max-lg:my-[25px]">
           <!-- Repeater -->
           <?php if( have_rows('bullet_list_hero_page_car_traders_insurance') ): while ( have_rows('bullet_list_hero_page_car_traders_insurance') ) : the_row(); ?>
             <li class="flex justify-start items-center gap-[15px] mb-[10px] text-[17px] max-sm:items-start max-sm:justify-start max-sm:gap-4 max-lg:text-[16px]">
               <i class="ph-bold ph-check text-[18px] max-lg:text-[17px] max-sm:mt-1"></i>
-              <p class="font-sans text-gray900 tracking-[0.18px] max-sm:text-left"><?php the_sub_field('content_bullet_list_page_car_traders_insurance') ?></p>
+              <p class="font-sans tracking-[0.18px] max-sm:text-left"><?php the_sub_field('content_bullet_list_page_car_traders_insurance') ?></p>
             </li>
           <?php endwhile; else : endif;?>
         </ul>
@@ -141,7 +141,7 @@
   <div class="w-full max-w-[1246px] mx-auto px-[15px]">
     <section class="py-[100px] max-sm:py-[30px] max-lg:py-[60px] flex justify-between items-start gap-[20px] max-md:flex-col-reverse">
       <div class="flex gap-[30px] max-sm:gap-[20px] flex-col w-full max-w-[559px] max-md:max-w-full">
-        <img src="<?php the_field('image_why_us_page_car_traders_insurance') ?>" alt="" class="object-cover w-full max-w-[559px] max-md:max-w-full">
+        <img src="<?php the_field('image_why_us_page_car_traders_insurance') ?>" alt="" class="object-cover w-full max-w-[559px] max-md:max-w-full max-h-[380px] rounded">
         <span class="font-sans text-gray700 text-sm"><?php the_field('terms_conditions_why_us_page_car_traders_insurance') ?></span>
       </div>
       <div class="w-full max-w-[584px] max-md:max-w-full">
@@ -209,7 +209,7 @@
         </div>
       </div>
       <div class="w-full max-w-[520px]">
-        <img src="<?php the_field('image_section_left_page_car_traders_insurance') ?>" alt="" class="object-cover w-full">
+        <img src="<?php the_field('image_section_left_page_car_traders_insurance') ?>" alt="" class="object-cover w-full rounded-md min-h-[300px] max-md:min-h-full">
       </div>
     </section>
   </div>
@@ -218,7 +218,7 @@
   <div class="w-full max-w-[1246px] mx-auto px-[15px]">
     <section class="pb-[100px] max-sm:pb-[30px] max-md:pb-[40px] flex flex-row justify-between items-center gap-[20px] max-lg:flex-col max-lg:justify-center">
       <div class="w-full max-w-[520px]">
-        <img src="<?php the_field('image_section_right_page_car_traders_insurance') ?>" alt="" class="object-cover w-full">
+        <img src="<?php the_field('image_section_right_page_car_traders_insurance') ?>" alt="" class="object-cover w-full rounded-md rounded-md min-h-[300px] max-md:min-h-full">
       </div>
       <div class="w-full max-w-[592px] max-lg:max-w-full">
         <span class="font-sans uppercase text-gray700 tracking-wider pb-[8px] max-sm:text-sm max-md:text-md"><?php the_field('subtitle_section_right_page_car_traders_insurance') ?></span>

@@ -209,7 +209,7 @@
         </div>
       </div>
       <div class="w-full max-w-[520px]">
-        <img src="<?php the_field('image_section_left_page_hgv_motor_trade_insurance') ?>" alt="" class="object-cover w-full">
+        <img src="<?php the_field('image_section_left_page_hgv_motor_trade_insurance') ?>" alt="" class="object-cover w-full rounded-md min-h-[300px] max-md:min-h-full">
       </div>
     </section>
   </div>
@@ -218,7 +218,7 @@
   <div class="w-full max-w-[1246px] mx-auto px-[15px]">
     <section class="pb-[100px] max-sm:pb-[30px] max-md:pb-[40px] flex flex-row justify-between items-center gap-[20px] max-lg:flex-col max-lg:justify-center">
       <div class="w-full max-w-[520px]">
-        <img src="<?php the_field('image_section_right_page_hgv_motor_trade_insurance') ?>" alt="" class="object-cover w-full">
+        <img src="<?php the_field('image_section_right_page_hgv_motor_trade_insurance') ?>" alt="" class="object-cover w-full rounded-md min-h-[300px] max-md:min-h-full">
       </div>
       <div class="w-full max-w-[592px] max-lg:max-w-full">
         <span class="font-sans uppercase text-gray700 tracking-wider pb-[8px] max-sm:text-sm max-md:text-md"><?php the_field('subtitle_section_right_page_hgv_motor_trade_insurance') ?></span>

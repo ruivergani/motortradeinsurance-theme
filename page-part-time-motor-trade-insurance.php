@@ -78,7 +78,7 @@
       <div class="w-full max-w-[584px] max-lg:max-w-full flex flex-col items-start justify-start max-lg:justify-center max-lg:items-center">
         <span class="block font-sans uppercase text-gray700 tracking-wider pb-[20px] max-sm:text-sm max-md:text-md max-lg:py-[10px]"><?php the_field('subtitle_hero_page_part_time_motor_trade_insurance') ?></span>
         <h2 class="font-sans text-gray900 pb-[25px] text-[56px] max-sm:text-[26px] max-md:text-[28px] max-lg:text-[30px] max-lg:pb-[15px] tracking-wider leading-[60px]">
-          HGV
+          Part Time
           <span class="before:block before:absolute before:-inset-1 before:-skew-y-2 before:bg-yellow-400 relative inline-block mt-3">
             <span class="relative ">Motor Trade</span>
           </span>
@@ -91,7 +91,7 @@
           <?php if( have_rows('bullet_list_hero_page_part_time_motor_trade_insurance') ): while ( have_rows('bullet_list_hero_page_part_time_motor_trade_insurance') ) : the_row(); ?>
             <li class="flex justify-start items-center gap-[15px] mb-[10px] text-[17px] max-sm:items-start max-sm:justify-start max-sm:gap-4 max-lg:text-[16px]">
               <i class="ph-bold ph-check text-[18px] max-lg:text-[17px] max-sm:mt-1"></i>
-              <p class="font-sans text-gray900 tracking-[0.18px] max-sm:text-left"><?php the_sub_field('content_bullet_list_page_part_time_motor_trade_insurance') ?></p>
+              <p class="font-sans tracking-[0.18px] max-sm:text-left"><?php the_sub_field('content_bullet_list_page_part_time_motor_trade_insurance') ?></p>
             </li>
           <?php endwhile; else : endif;?>
         </ul>
@@ -209,7 +209,7 @@
         </div>
       </div>
       <div class="w-full max-w-[520px]">
-        <img src="<?php the_field('image_section_left_page_part_time_motor_trade_insurance') ?>" alt="" class="object-cover w-full">
+        <img src="<?php the_field('image_section_left_page_part_time_motor_trade_insurance') ?>" alt="" class="object-cover w-full rounded-md min-h-[300px] max-md:min-h-full">
       </div>
     </section>
   </div>
@@ -218,7 +218,7 @@
   <div class="w-full max-w-[1246px] mx-auto px-[15px]">
     <section class="pb-[100px] max-sm:pb-[30px] max-md:pb-[40px] flex flex-row justify-between items-center gap-[20px] max-lg:flex-col max-lg:justify-center">
       <div class="w-full max-w-[520px]">
-        <img src="<?php the_field('image_section_right_page_part_time_motor_trade_insurance') ?>" alt="" class="object-cover w-full">
+        <img src="<?php the_field('image_section_right_page_part_time_motor_trade_insurance') ?>" alt="" class="object-cover w-full rounded-md min-h-[300px] max-md:min-h-full">
       </div>
       <div class="w-full max-w-[592px] max-lg:max-w-full">
         <span class="font-sans uppercase text-gray700 tracking-wider pb-[8px] max-sm:text-sm max-md:text-md"><?php the_field('subtitle_section_right_page_part_time_motor_trade_insurance') ?></span>
