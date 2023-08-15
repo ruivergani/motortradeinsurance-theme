@@ -37,7 +37,7 @@
             <!-- Item Menu-->
             <li>
               <a tabindex="0" class="cursor-default flex items-center gap-3 js-btn-menu" aria-label="Road Risk Insurance Menu">
-                <span class="font-sans font-medium text-lg text-gray-900">All Insurance Type</span>
+                <span class="font-sans font-medium text-lg text-gray-900">All Insurance Types</span>
                 <i class="ph-bold ph-caret-down text-lg"></i>
               </a>
               <!-- Dropdown Menu -->
@@ -171,7 +171,7 @@
                     </li>
                     <li class="w-full max-w-[257px]">
                       <a href="<?php the_field('customer_service_number', 'options') ?>" class="flex items-center justify-center gap-3 hover:text-darkRed ease-in-out duration-200">
-                        <i class="ph-bold ph-phone"></i>
+                        <i class="ph-bold ph-phone-outgoing"></i>
                         <span class="font-sans font-medium text-[13px] text-gray900 hover:text-darkRed ease-in-out duration-200">Customer Service</span>
                       </a>
                     </li>
@@ -193,7 +193,8 @@
           </ul>
         </nav>
         <!-- Base Get a Quote Button -->
-        <button class="max-lg:hidden w-full max-w-[173px] inline-block border rounded-[28px] border-darkRed bg-darkRed px-8 py-2 font-sans text-center text-[16px] text-white antialiased font-semibold uppercase hover:bg-transparent hover:text-darkRed focus:outline-none focus:ring active:text-darkRed ease-in-out duration-200 js-cta-button" id="js-cta-button">
+        <button class="flex items-center justify-center gap-2 max-lg:hidden w-full max-w-[195px] border rounded-[28px] border-darkRed bg-darkRed px-[30px] py-[10px] font-sans text-center text-[16px] text-white antialiased font-semibold uppercase hover:bg-transparent hover:text-darkRed focus:outline-none focus:ring active:text-darkRed ease-in-out duration-200 js-cta-button" id="js-cta-button">
+          <i class="ph-bold ph-arrow-right text-[16px]"></i>
           <span>Get a Quote</span>
         </button>
         <!-- Mobile Menu Button -->
