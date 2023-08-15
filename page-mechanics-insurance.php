@@ -141,7 +141,7 @@
     <section class="py-[100px] max-sm:py-[30px] max-lg:py-[60px] flex justify-between items-start gap-[20px] max-md:flex-col-reverse">
       <div class="flex gap-[30px] max-sm:gap-[20px] flex-col w-full max-w-[559px] max-md:max-w-full">
         <img src="<?php the_field('image_why_us_page_mechanics_insurance') ?>" alt="" class="object-cover w-full max-w-[559px] max-md:max-w-full rounded-md">
-        <span class="font-sans text-gray700 text-sm"><?php the_field('terms_conditions_why_us_page_mechanics_insurance') ?></span>
+        <span class="font-sans text-gray700 text-sm max-sm:text-center"><?php the_field('terms_conditions_why_us_page_mechanics_insurance') ?></span>
       </div>
       <div class="w-full max-w-[584px] max-md:max-w-full">
         <div>
@@ -198,7 +198,7 @@
   <!-- Primary Content -->
   <div class="w-full max-w-[1246px] mx-auto px-[15px]">
     <section class="py-[100px] max-sm:py-[30px] max-md:py-[60px] max-lg:py-[60px] flex flex-row justify-between items-center gap-[20px] max-lg:flex-col max-lg:justify-center">
-      <div class="w-full max-w-[592px] max-lg:max-w-full">
+      <div class="w-full max-w-[592px] max-lg:max-w-full max-sm:text-center">
         <span class="font-sans uppercase text-gray700 tracking-wider pb-[8px] max-sm:text-sm max-md:text-md"><?php the_field('subtitle_section_left_page_mechanics_insurance') ?></span>
         <h2 class="font-sans text-gray900 pb-[25px] text-[40px] max-sm:text-[26px] max-md:text-[28px] max-lg:text-[30px] max-lg:pb-[15px]">
           <?php the_field('title_section_left_page_mechanics_insurance') ?>
@@ -219,7 +219,7 @@
       <div class="w-full max-w-[520px]">
         <img src="<?php the_field('image_section_right_page_mechanics_insurance') ?>" alt="" class="object-cover w-full rounded-md min-h-[300px] max-md:min-h-full">
       </div>
-      <div class="w-full max-w-[592px] max-lg:max-w-full">
+      <div class="w-full max-w-[592px] max-lg:max-w-full max-sm:text-center">
         <span class="font-sans uppercase text-gray700 tracking-wider pb-[8px] max-sm:text-sm max-md:text-md"><?php the_field('subtitle_section_right_page_mechanics_insurance') ?></span>
         <h2 class="font-sans text-gray900 pb-[25px] text-[40px] max-sm:text-[26px] max-md:text-[28px] max-lg:text-[30px] max-lg:pb-[15px]">
           <?php the_field('title_section_right_page_mechanics_insurance') ?>
