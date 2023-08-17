@@ -90,10 +90,10 @@
           <i class="ph-bold ph-arrow-right font-semibold text-[16px]"></i>
         </button>
       </div>
-      <div class="w-full max-w-[564px] flex flex-col gap-[25px] pt-[170px] max-lg:pt-[0px] max-lg:max-w-[400px]">
+      <div class="w-full max-w-[564px] flex flex-col gap-[25px] pt-[170px] max-lg:pt-[0px] max-lg:max-w-[400px]" id="hero-right-div">
         <!-- Right Div -->
-          <img src="<?php echo get_template_directory_uri()?>/assets/bg-home-hero.svg" alt="" class="absolute right-0 top-[116px] z-[-20] max-lg:hidden">
-          <img src="<?php echo get_template_directory_uri()?>/assets/car-hero-image.svg" alt="car audi image" title="car audi image" class="absolute right-[44px] top-[260px] w-max-[564px] h-max-[302px] max-lg:relative max-lg:right-auto max-lg:top-auto max-lg:max-w-[400px] max-lg:mt-[20px]">
+          <img src="<?php echo get_template_directory_uri()?>/assets/bg-home-hero.svg" alt="" class="absolute right-0 top-[116px] z-[-20] max-lg:hidden"  id="hero-right-bg-image">
+          <img src="<?php echo get_template_directory_uri()?>/assets/car-hero-image.svg" alt="car audi image" title="car audi image" class="absolute right-[44px] top-[260px] w-max-[564px] h-max-[302px] max-lg:relative max-lg:right-auto max-lg:top-auto max-lg:max-w-[400px] max-lg:mt-[20px]" id="hero-right-car-image">
       </div>
     </section>
   </div>

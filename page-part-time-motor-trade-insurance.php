@@ -74,7 +74,7 @@
 
   <!-- Section Hero Insurance Pages -->
   <div class="w-full max-w-[1246px] mx-auto px-[15px]">
-    <section class="flex justify-between items-start flex-row max-lg:flex-col max-lg:items-center max-lg:text-center max-lg:justify-center py-[80px] gap-[20px]  max-sm:py-[40px] max-md:py-[60px] max-lg:gap-[40px]">
+    <section class="flex justify-between items-center flex-row max-lg:flex-col max-lg:items-center max-lg:text-center max-lg:justify-center py-[80px] gap-[20px]  max-sm:py-[40px] max-md:py-[60px] max-lg:gap-[40px]">
       <div class="w-full max-w-[584px] max-lg:max-w-full flex flex-col items-start justify-start max-lg:justify-center max-lg:items-center">
         <span class="block font-sans uppercase text-gray700 tracking-wider pb-[20px] max-sm:text-sm max-md:text-md max-lg:py-[10px]"><?php the_field('subtitle_hero_page_part_time_motor_trade_insurance') ?></span>
         <h2 class="font-sans text-gray900 pb-[25px] text-[56px] max-sm:text-[26px] max-md:text-[28px] max-lg:text-[30px] max-lg:pb-[15px] tracking-wider leading-[60px]">
@@ -142,14 +142,14 @@
     <section class="py-[100px] max-sm:py-[30px] max-lg:py-[60px] flex justify-between items-start gap-[20px] max-md:flex-col-reverse">
       <div class="flex gap-[30px] max-sm:gap-[20px] flex-col w-full max-w-[559px] max-md:max-w-full">
         <img src="<?php the_field('image_why_us_page_part_time_motor_trade_insurance') ?>" alt="" class="object-cover w-full max-w-[559px] max-md:max-w-full max-h-[380px] rounded">
-        <span class="font-sans text-gray700 text-sm max-sm:text-center"><?php the_field('terms_conditions_why_us_page_part_time_motor_trade_insurance') ?></span>
+        <span class="font-sans text-gray700 text-sm max-md:text-center"><?php the_field('terms_conditions_why_us_page_part_time_motor_trade_insurance') ?></span>
       </div>
       <div class="w-full max-w-[584px] max-md:max-w-full">
         <div>
-          <span class="font-sans block uppercase text-gray700 tracking-wider pb-[8px] max-sm:text-sm max-md:text-md max-sm:text-center">
+          <span class="font-sans block uppercase text-gray700 tracking-wider pb-[8px] max-sm:text-sm max-md:text-md max-md:text-center">
             <?php the_field('subtitle_why_us_page_part_time_motor_trade_insurance') ?>
           </span>
-          <h2 class="font-sans text-gray900 text-[40px] max-sm:text-[26px] max-sm:text-center max-md:text-[28px] max-lg:text-[30px]">
+          <h2 class="font-sans text-gray900 text-[40px] max-sm:text-[26px] max-md:text-center max-md:text-[28px] max-lg:text-[30px]">
             <?php the_field('title_why_us_page_part_time_motor_trade_insurance') ?>
           </h2>
         </div>
@@ -199,7 +199,7 @@
   <!-- Primary Content -->
   <div class="w-full max-w-[1246px] mx-auto px-[15px]">
     <section class="py-[100px] max-sm:py-[30px] max-md:py-[60px] max-lg:py-[60px] flex flex-row justify-between items-center gap-[20px] max-lg:flex-col max-lg:justify-center">
-      <div class="w-full max-w-[592px] max-lg:max-w-full max-sm:text-center">
+      <div class="w-full max-w-[592px] max-lg:max-w-full max-md:text-center">
         <span class="font-sans uppercase text-gray700 tracking-wider pb-[8px] max-sm:text-sm max-md:text-md"><?php the_field('subtitle_section_left_page_part_time_motor_trade_insurance') ?></span>
         <h2 class="font-sans text-gray900 pb-[25px] text-[40px] max-sm:text-[26px] max-md:text-[28px] max-lg:text-[30px] max-lg:pb-[15px]">
           <?php the_field('title_section_left_page_part_time_motor_trade_insurance') ?>
@@ -220,7 +220,7 @@
       <div class="w-full max-w-[520px]">
         <img src="<?php the_field('image_section_right_page_part_time_motor_trade_insurance') ?>" alt="" class="object-cover w-full rounded-md min-h-[300px] max-md:min-h-full">
       </div>
-      <div class="w-full max-w-[592px] max-lg:max-w-full max-sm:text-center">
+      <div class="w-full max-w-[592px] max-lg:max-w-full max-md:text-center">
         <span class="font-sans uppercase text-gray700 tracking-wider pb-[8px] max-sm:text-sm max-md:text-md"><?php the_field('subtitle_section_right_page_part_time_motor_trade_insurance') ?></span>
         <h2 class="font-sans text-gray900 pb-[25px] text-[40px] max-sm:text-[26px] max-md:text-[28px] max-lg:text-[30px] max-lg:pb-[15px]">
           <?php the_field('title_section_right_page_part_time_motor_trade_insurance') ?>

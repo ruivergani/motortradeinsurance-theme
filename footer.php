@@ -1,7 +1,7 @@
     <!-- Footer -->
     <footer class="bg-white border-t border-gray200">
       <div class="w-full max-w-[1246px] mx-auto px-[15px]">
-        <div class="mx-auto max-w-screen-xl space-y-8 pt-16 pb-8 lg:space-y-16 max-sm:py-[30px]">
+        <div class="mx-auto max-w-screen-xl space-y-8 pt-[40px] pb-8 lg:space-y-16 max-sm:pt-[30px]">
           <div class="grid grid-cols-1 gap-8 lg:grid-cols-3">
             <div>
               <div class="max-sm:flex max-sm:justify-center">

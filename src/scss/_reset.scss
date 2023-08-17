@@ -444,3 +444,36 @@ header{
         }
     }
 }
+@media (min-width: 976px) and (max-width:1150px){
+    #hero-right-div{
+        #hero-right-car-image{
+            right: 20px;
+        }
+    }
+}
+@media (min-width: 1800px){
+    #hero-right-div{
+        #hero-right-bg-image{
+            right: 200px;
+        }
+        #hero-right-car-image{
+            right: 200px;
+        }
+    }
+}
+@media (min-width: 2200px){
+    #hero-right-div{
+        #hero-right-bg-image{
+            right: 350px;
+        }
+        #hero-right-car-image{
+            right: 350px;
+        }
+    }
+
+}
+@media (max-width:1415px){
+    #square-svg{
+        display: none;
+    }
+}
